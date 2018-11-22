@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import HomepageView from './HomepageView';
-import { goToProducts } from '../navigation/NavigationActions';
+import ProductsView from './ProductsView';
+import { goToHomePage } from '../navigation/NavigationActions';
 
 export default connect(
   state => ({
@@ -8,7 +8,7 @@ export default connect(
   }),
   dispatch => ({
     goToProducts: () => {
-      dispatch(goToProducts());
+      dispatch(goToHomePage());
     },
   })
-)(HomepageView);
+)(ProductsView);

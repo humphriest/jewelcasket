@@ -9,7 +9,7 @@ export const goToHomePage = () => ({
 });
 
 export const goToProducts = () => ({
-  type: GO_TO_HOMEPAGE,
+  type: GO_TO_PRODUCTS,
 });
 
 //   export const goToHomePage = () => ({

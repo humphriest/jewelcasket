@@ -5,7 +5,6 @@ export default class Homepage extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>Welcome To the Jewel Casket</p>
           <a
             className="App-link"

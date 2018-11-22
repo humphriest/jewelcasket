@@ -1,4 +1,4 @@
-import { GO_TO_HOMEPAGE } from './NavigationActions';
+import { GO_TO_HOMEPAGE, GO_TO_PRODUCTS } from './NavigationActions';
 
 const NavigationState = () => ({
   currentView: 'homepage',
@@ -11,6 +11,13 @@ export function NavigationStateReducer(state = initialNavigationState, action) {
     case GO_TO_HOMEPAGE: {
       return {
         ...state,
+        currentView: 'homepage',
+      };
+    }
+    case GO_TO_PRODUCTS: {
+      return {
+        ...state,
+        currentView: 'products',
       };
     }
     default:

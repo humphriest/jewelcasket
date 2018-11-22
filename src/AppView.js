@@ -1,7 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import renderView from './Router';
 
 export default class AppView extends React.Component {
+  componentDidMount() {
+    console.log(this.props);
+  }
   render() {
-    return <div>This is the homepage</div>;
+    return (
+      <div>
+        <div>This is the homepage</div>
+        {renderView(this.props)}
+      </div>
+    );
   }
 }
