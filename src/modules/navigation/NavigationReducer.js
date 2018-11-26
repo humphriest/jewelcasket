@@ -1,4 +1,4 @@
-import { GO_TO_HOMEPAGE, GO_TO_PRODUCTS } from './NavigationActions';
+import { SET_CURRENT_VIEW } from './NavigationActions';
 
 const NavigationState = () => ({
   currentView: 'homepage',
@@ -8,16 +8,11 @@ export const initialNavigationState = NavigationState();
 
 export function NavigationStateReducer(state = initialNavigationState, action) {
   switch (action.type) {
-    case GO_TO_HOMEPAGE: {
+    case SET_CURRENT_VIEW: {
+      const { nextVeiw } = action.payload;
       return {
         ...state,
-        currentView: 'homepage',
-      };
-    }
-    case GO_TO_PRODUCTS: {
-      return {
-        ...state,
-        currentView: 'products',
+        currentView: nextVeiw,
       };
     }
     default:

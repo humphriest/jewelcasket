@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import AppView from './AppView';
-import { setCurrentView } from './modules/navigation/NavigationActions';
+import NavBar from './NavBar';
+import { setCurrentView } from '../navigation/NavigationActions';
 
 export default connect(
   state => ({
@@ -13,4 +13,4 @@ export default connect(
       dispatch(setCurrentView(nextView));
     },
   })
-)(AppView);
+)(NavBar);
