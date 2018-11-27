@@ -9,10 +9,10 @@ export const initialNavigationState = NavigationState();
 export function NavigationStateReducer(state = initialNavigationState, action) {
   switch (action.type) {
     case SET_CURRENT_VIEW: {
-      const { nextVeiw } = action.payload;
+      const { nextView } = action.payload;
       return {
         ...state,
-        currentView: nextVeiw,
+        currentView: nextView,
       };
     }
     default:
