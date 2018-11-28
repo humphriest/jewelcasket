@@ -1,12 +1,14 @@
 import React from 'react';
 
+import WelcomeImage from '../components/WelcomeImage';
+import './Homepage.css';
+
 export default class Homepage extends React.Component {
   render() {
+    const { setCurrentView } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>Welcome To the Jewel Casket</p>
-        </header>
+      <div>
+        <WelcomeImage setCurrentView={setCurrentView} />
       </div>
     );
   }

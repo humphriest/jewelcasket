@@ -1,0 +1,18 @@
+.welcomeContainer {
+  flex: 1;
+}
+#shopNowButton {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  background-color: transparent;
+  color: gold;
+  border-radius: 20;
+  border-width: 5;
+  border-color: gold;
+  font-size: 40;
+}
+.image {
+  opacity: 0.8;
+  position: relative;
+}

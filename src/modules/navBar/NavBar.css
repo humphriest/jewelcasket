@@ -1,3 +1,10 @@
-#logo {
-  color: red;
+.logo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  cursor: pointer;
+}
+#bottomMargin {
+  margin-bottom: 0;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
