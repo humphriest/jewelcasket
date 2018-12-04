@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { assets } from '../../assets/';
 import WelcomeImage from '../components/WelcomeImage';
 import './Homepage.css';
 

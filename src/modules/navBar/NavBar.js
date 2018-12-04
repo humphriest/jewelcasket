@@ -17,7 +17,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <Navbar  id="bottomMargin">
+      <Navbar id="bottomMargin">
         <Navbar.Header>
           <Navbar.Brand
             className="logo"
@@ -28,13 +28,21 @@ export default class NavBar extends Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav pullRight>
-          <NavItem eventKey={2} onClick={() => this._renderPage(PRODUCTS_VIEW)}>
+          <NavItem
+            className="rightOption"
+            eventKey={2}
+            onClick={() => this._renderPage(PRODUCTS_VIEW)}
+          >
             Products
           </NavItem>
-          <NavItem eventKey={3} onClick={() => this._renderPage(CONTACT_US)}>
+          <NavItem
+            className="rightOption"
+            eventKey={3}
+            onClick={() => this._renderPage(CONTACT_US)}
+          >
             Contact Us
           </NavItem>
-          <NavItem eventKey={4} onClick={() => this._renderPage(REVIEWS)}>
+          <NavItem className="rightOption" eventKey={4} onClick={() => this._renderPage(REVIEWS)}>
             Reviews
           </NavItem>
         </Nav>

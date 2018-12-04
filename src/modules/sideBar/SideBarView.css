@@ -1,0 +1,17 @@
+.filterContainer {
+  margin-top: 40%;
+}
+.filterOption {
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+.sidebar {
+  height: 100%;
+  border-right: 5px solid black;
+}
+.searchBar {
+  margin-top: 40%;
+  margin-left: 20%;
+}
