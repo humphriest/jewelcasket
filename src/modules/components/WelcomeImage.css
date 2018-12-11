@@ -4,13 +4,16 @@
 #shopNowButton {
   position: absolute;
   top: 75%;
-  left: 50%;
+  left: 42%;
   background-color: transparent;
-  color: gold;
+  color: white;
   border-radius: 20;
-  border-width: 5;
-  border-color: gold;
+  border-width: 3px;
+  border-color: white;
   font-size: 40;
+  font-weight: bold;
+  width: 16%;
+  height: 5%;
 }
 .image {
   opacity: 0.8;

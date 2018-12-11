@@ -1,4 +1,12 @@
-import { ringsAssets, pendantsAssets, braceletsChainsAssets } from '../assets';
+import {
+  ringsAssets,
+  pendantsAssets,
+  braceletsChainsAssets,
+  earringsAssets,
+  broochAssets,
+  broochesAssets,
+  cufflinksAssets,
+} from '../assets';
 
 const ringsTitles = [
   '18 Carat White Gold Cluster Ring',
@@ -26,6 +34,26 @@ const braceletsChainsTitles = [
   'Fancy Rose Gold Bracelet with Padlock',
   'Antique Rose Gold Albert Watch Chain with Blood Stone Fob',
   'Cultured Pearl Necklace with Pearl & Diamond Clasp',
+];
+
+const earringsTitles = [
+  'Antique Platinum & Diamon Earrings',
+  'Tanzanity & Diamond Earrings',
+  'Pearl & Diamond Earrings',
+  '18 Carat White Gold Pink Sapphire & Diamond Earrings',
+  'Emerald & Diamond Earrings',
+];
+
+const broochesTitles = [
+  'White Gold Diamond Spray Brooch',
+  '15 Carat Antique Brooch',
+  'Antique Diamond & Ruby Insect Brooch',
+];
+
+const cufflinksTitles = [
+  'Antique Rose Gold Cufflinks',
+  'Set of Mother of Pearl Cufflinks and Shirt Stud Set',
+  'Silver & Enamel Oval Shaped Cufflinks',
 ];
 
 const makeProductObject = (title, image) => {
@@ -74,4 +102,43 @@ const getBraceletsChains = () => {
   return braceletChains;
 };
 
-export { getRings, getPendants, getBraceletsChains };
+const getEarrings = () => {
+  let earring = {};
+  const earrings = [];
+
+  for (let i = 0; i < earringsAssets.length; i += 1) {
+    for (let x = 0; x < earringsTitles.length; x += 1) {
+      earring = makeProductObject(earringsTitles[i], earringsAssets[i]);
+    }
+    earrings.push(earring);
+  }
+  return earrings;
+};
+
+const getBrooches = () => {
+  let brooch = {};
+  const brooches = [];
+
+  for (let i = 0; i < broochesAssets.length; i += 1) {
+    for (let x = 0; x < broochesTitles.length; x += 1) {
+      brooch = makeProductObject(broochesTitles[i], broochesAssets[i]);
+    }
+    brooches.push(brooch);
+  }
+  return brooches;
+};
+
+const getCufflinks = () => {
+  let cufflink = {};
+  const cufflinks = [];
+
+  for (let i = 0; i < cufflinksAssets.length; i += 1) {
+    for (let x = 0; x < cufflinksTitles.length; x += 1) {
+      cufflink = makeProductObject(cufflinksTitles[i], cufflinksAssets[i]);
+    }
+    cufflinks.push(cufflink);
+  }
+  return cufflinks;
+};
+
+export { getRings, getPendants, getBraceletsChains, getEarrings, getBrooches, getCufflinks };

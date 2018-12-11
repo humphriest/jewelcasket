@@ -1,14 +1,30 @@
 .middle {
   text-align: center;
+  margin-top: 8.5%;
+}
+.jewellryMiddle {
+  text-align: center;
+  margin-top: 1.5%;
 }
 .title {
   font-size: 32px;
   margin-left: 5%;
   text-align: left;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  height: 5%;
+  margin-top: 3%;
+}
+.inStore {
+  font-size: 20px;
+  margin-left: 5%;
+  text-align: right;
+  height: 5%;
+  margin-top: 3%;
 }
 .full-height {
   height: 100%;
   border-right: 5px solid black;
+}
+.sideBorder {
+  border-right: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
 }

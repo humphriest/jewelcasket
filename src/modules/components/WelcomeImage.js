@@ -30,18 +30,22 @@ export default class WelcomeImage extends React.Component {
     }
   };
 
+  _renderShopNowButton = () => {
+    const { setCurrentView } = this.props;
+    return (
+      <button id="shopNowButton" onClick={() => setCurrentView(PRODUCTS_VIEW)}>
+        <div>Shop Now</div>
+      </button>
+    );
+  };
+
   render() {
     const { imageWidth } = this.state;
-    const { setCurrentView } = this.props;
 
     return (
       <div>
         <img className="image" width={imageWidth} src={require('../../assets/main.jpg')} />
-        <div>
-          <button id="shopNowButton" onClick={() => setCurrentView(PRODUCTS_VIEW)}>
-            <div>Shop Now</div>
-          </button>
-        </div>
+        <div>{this._renderShopNowButton()}</div>
       </div>
     );
   }

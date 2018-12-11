@@ -17,7 +17,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <Navbar id="bottomMargin">
+      <Navbar fixedTop={true} id="bottomMargin">
         <Navbar.Header>
           <Navbar.Brand
             className="logo"
