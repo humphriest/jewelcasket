@@ -14,12 +14,25 @@ export default class AppView extends React.Component {
     console.log(this.props);
   }
 
+  _renderFooter = () => {
+    const { setCurrentView } = this.props;
+    return (
+      <div className="footerContainer">
+        <FooterView setCurrentView={setCurrentView} />
+      </div>
+    );
+  };
+
+  _renderMiddle = () => {
+    return <div className="middleContainer">{renderView(this.props)}</div>;
+  };
+
   render() {
     return (
-      <div>
+      <div className="parentContainer">
         <NavBarContainer {...this.props} />
-        {renderView(this.props)}
-        <FooterView />
+        {this._renderMiddle()}
+        {this._renderFooter()}
       </div>
     );
   }

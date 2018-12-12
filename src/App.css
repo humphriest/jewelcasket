@@ -34,3 +34,12 @@
 div {
   font-style: oblique;
 }
+.parentContainer {
+  flex: 1;
+}
+.footerContainer {
+  flex: 0.2;
+}
+.middleContainer {
+  flex: 0.8;
+}

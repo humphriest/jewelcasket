@@ -1,21 +1,20 @@
 .footerContainer {
   text-align: left;
-
+  background-image: url('../../assets/ringsBackground2.jpg');
   height: auto;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   font-style: normal;
+  color: white;
 }
 .footerTitles {
   font-weight: 400;
   font-size: 26px;
-  color: white;
 }
 .footerDescriptions {
   margin-top: 10px;
   font-size: 16px;
-  color: white;
 }
 .footerColumnContainer {
   margin-top: 15px;
@@ -28,5 +27,8 @@
 .addressListItem {
   margin-top: 5px;
   font-size: 16px;
-  color: white;
+}
+.middle {
+  padding-left: 20%;
+  margin-top: 0;
 }

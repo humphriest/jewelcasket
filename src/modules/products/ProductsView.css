@@ -1,6 +1,9 @@
 .middle {
-  text-align: center;
+  text-align: left;
   margin-top: 8.5%;
+}
+.pageMiddle {
+  margin-top: 15%;
 }
 .jewellryMiddle {
   text-align: center;
