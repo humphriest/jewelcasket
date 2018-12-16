@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import AppView from './AppView';
 import { setCurrentView } from './modules/navigation/NavigationActions';
+import { displayProductType } from './modules/products/ProductsActions';
 
 export default connect(
   state => ({
@@ -10,6 +11,9 @@ export default connect(
   dispatch => ({
     setCurrentView: nextView => {
       dispatch(setCurrentView(nextView));
+    },
+    displayProductType: productType => {
+      dispatch(displayProductType(productType));
     },
   })
 )(AppView);
