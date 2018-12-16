@@ -1,10 +1,10 @@
-.contactUsContainer {
+#contactUsContainer {
   margin-top: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 2.5%;
 }
 .mapContainer {
   width: 70%;
-  height: 25%;
+  height: 30%;
   margin-left: 15%;
 }
 .contactUs {
