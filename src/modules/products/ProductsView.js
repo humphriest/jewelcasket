@@ -87,7 +87,7 @@ export default class ProductsView extends React.Component {
     const { displayProductType } = this.props;
     return (
       <div className="col-md-12 marginTop">
-        <div className="middle col-md-3">
+        <div className="col-md-3">
           <div className="sideBorder" style={{ height: window.screen.height }}>
             <SideBarView displayProductType={displayProductType} />
           </div>
