@@ -6,9 +6,18 @@
 #bottomMargin {
   margin-bottom: 0;
   padding-bottom: 2.5%;
-  padding-top: 2.5%;
+  padding-top: 3.5%;
 }
 .rightOption {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#socialMediaBar {
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  padding-left: 0;
+  top: 0;
 }

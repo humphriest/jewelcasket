@@ -17,36 +17,43 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <Navbar fixedTop={true} id="bottomMargin">
-        <Navbar.Header>
-          <Navbar.Brand
-            className="logo"
-            eventKey={1}
-            onClick={() => this._renderPage(HOMEPAGE_VIEW)}
-          >
-            The Jewel Casket
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav pullRight>
-          <NavItem
-            className="rightOption"
-            eventKey={2}
-            onClick={() => this._renderPage(PRODUCTS_VIEW)}
-          >
-            Products
-          </NavItem>
-          <NavItem
-            className="rightOption"
-            eventKey={3}
-            onClick={() => this._renderPage(CONTACT_US)}
-          >
-            Contact Us
-          </NavItem>
-          <NavItem className="rightOption" eventKey={4} onClick={() => this._renderPage(REVIEWS)}>
-            Reviews
-          </NavItem>
-        </Nav>
-      </Navbar>
+      <div>
+        <Navbar id="bottomMargin">
+          <Navbar.Header>
+            <Navbar.Brand
+              className="logo"
+              eventKey={1}
+              onClick={() => this._renderPage(HOMEPAGE_VIEW)}
+            >
+              The Jewel Casket
+            </Navbar.Brand>
+          </Navbar.Header>
+          <Nav pullRight>
+            <NavItem
+              className="rightOption"
+              eventKey={2}
+              onClick={() => this._renderPage(PRODUCTS_VIEW)}
+            >
+              Products
+            </NavItem>
+            <NavItem
+              className="rightOption"
+              eventKey={3}
+              onClick={() => this._renderPage(CONTACT_US)}
+            >
+              Contact Us
+            </NavItem>
+            <NavItem className="rightOption" eventKey={4} onClick={() => this._renderPage(REVIEWS)}>
+              Reviews
+            </NavItem>
+          </Nav>
+        </Navbar>
+        <div id="socialMediaBar">
+          <span>fb</span>
+          <span>tw</span>
+          <span>ins</span>
+        </div>
+      </div>
     );
   }
 }

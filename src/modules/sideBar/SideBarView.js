@@ -56,6 +56,7 @@ export default class SideBarView extends React.Component {
   _renderSearchBar = () => {
     return (
       <form className="searchBarContainer">
+        <div className="filterTitle"> Product Search</div>
         <input
           className="searchBar"
           placeholder="Search products"
