@@ -6,7 +6,7 @@
 #bottomMargin {
   margin-bottom: 0;
   padding-bottom: 2.5%;
-  padding-top: 3.5%;
+  padding-top: 4.5%;
 }
 .rightOption {
   font-size: 20px;
@@ -15,7 +15,7 @@
 #socialMediaBar {
   background-color: black;
   color: white;
-  height: 30px;
+  height: 4%;
   width: 100%;
   position: absolute;
   padding-left: 0;
