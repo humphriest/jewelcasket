@@ -13,7 +13,7 @@ export default class ContactUsView extends React.Component {
       ))
     );
     return (
-      <div className="contactUsContainer ">
+      <div id="contactUsContainer">
         <div className="title">About Us</div>
         <p className="contactUs">
           <p className="aboutContainer">
@@ -76,14 +76,16 @@ export default class ContactUsView extends React.Component {
           </p>
         </p>
         <br />
-        <div className="col-md-12" id="contactUsContainer">
-          <MyMapComponent
-            isMarkerShown
-            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `400px` }} />}
-            mapElement={<div style={{ height: `100%` }} />}
-          />
+        <div id="contactUsContainer">
+          <div className="col-md-12">
+            <MyMapComponent
+              isMarkerShown
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `400px` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
+          </div>
         </div>
       </div>
     );

@@ -1,6 +1,5 @@
 #contactUsContainer {
   margin-top: 20%;
-  margin-bottom: 2.5%;
 }
 .mapContainer {
   width: 70%;
@@ -26,4 +25,12 @@
 }
 .aboutContainer {
   margin-bottom: 4%;
+}
+.addressList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.addressListItem {
+  margin-top: 5px;
+  font-size: 16px;
 }
