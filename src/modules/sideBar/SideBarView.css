@@ -16,6 +16,7 @@
 .sidebar {
   height: 100%;
   border-right: 5px solid black;
+  padding-left: 0;
 }
 .searchBarContainer {
   margin-top: 80%;

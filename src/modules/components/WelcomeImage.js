@@ -43,7 +43,7 @@ export default class WelcomeImage extends React.Component {
     const { imageWidth } = this.state;
 
     return (
-      <div>
+      <div className="col-md-12 welcomeContainer">
         <img className="image" width={imageWidth} src={require('../../assets/main.jpg')} />
         <div>{this._renderShopNowButton()}</div>
       </div>

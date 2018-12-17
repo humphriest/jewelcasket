@@ -32,7 +32,7 @@ export default class AppView extends React.Component {
     }
     return (
       <div className="middleContainer">
-        <div className="col-md-12">
+        <div className="col-md-12 sideBarContainer">
           <div className="col-md-3 sideBorder" style={{ height: window.screen.height }}>
             <SideBar displayProductType={displayProductType} />
           </div>

@@ -43,3 +43,6 @@ div {
 .middleContainer {
   flex: 0.8;
 }
+.sideBarContainer {
+  padding-left: 0;
+}
