@@ -27,30 +27,37 @@ export default class ProductsView extends React.Component {
     switch (viewType) {
       case constants.VIEW_ALL: {
         productsToShow = getRings();
+        break;
       }
       case constants.VIEW_RINGS: {
         this.pageTitle = 'Rings';
         productsToShow = getRings();
+        break;
       }
       case constants.VIEW_PENDANTS: {
         this.pageTitle = 'Pendants';
         productsToShow = getPendants();
+        break;
       }
       case constants.VIEW_BRACELETS_CHAINS: {
         this.pageTitle = 'Bracelets & Chains';
         productsToShow = getBraceletsChains();
+        break;
       }
       case constants.VIEW_EARRINGS: {
         this.pageTitle = 'Earrings';
         productsToShow = getEarrings();
+        break;
       }
       case constants.VIEW_BROOCHES: {
         this.pageTitle = 'Brooches';
         productsToShow = getBrooches();
+        break;
       }
       case constants.VIEW_CUFFLINKS: {
         this.pageTitle = 'Cufflinks';
         productsToShow = getCufflinks();
+        break;
       }
       default:
         productsToShow = getRings();
