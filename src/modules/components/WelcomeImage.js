@@ -44,7 +44,11 @@ export default class WelcomeImage extends React.Component {
 
     return (
       <div className="col-md-12 welcomeContainer">
-        <img className="image" width={imageWidth} src={require('../../assets/main.jpg')} />
+        <img
+          className="image"
+          width={imageWidth}
+          src={require('../../assets/backgroundPhoto7.jpg')}
+        />
         <div>{this._renderShopNowButton()}</div>
       </div>
     );
