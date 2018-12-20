@@ -7,7 +7,7 @@ export default class ContactUsView extends React.Component {
   render() {
     const MyMapComponent = withScriptjs(
       withGoogleMap(props => (
-        <GoogleMap defaultZoom={20} defaultCenter={{ lat: 53.34109, lng: -6.258691 }}>
+        <GoogleMap defaultZoom={15} defaultCenter={{ lat: 53.34109, lng: -6.258691 }}>
           {props.isMarkerShown && <Marker position={{ lat: 53.34109, lng: -6.258691 }} />}
         </GoogleMap>
       ))
@@ -26,7 +26,7 @@ export default class ContactUsView extends React.Component {
               <li className="addressListItem">
                 For more assistance or pricing, come visit us instore to see our stunning and
                 elegant products. Or email us at
-                <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelCasket.ie</a>.
+                <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
               </li>
             </ul>
           </p>
@@ -77,10 +77,10 @@ export default class ContactUsView extends React.Component {
         </p>
         <br />
         <div id="contactUsContainer">
-          <div className="col-md-12">
+          <div className="col-md-12" id="aboveMapMargin">
             <MyMapComponent
               isMarkerShown
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_NkXItHgSzgMuS0x5pfbIABQbtDsv2QI&callback=initMap"
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
