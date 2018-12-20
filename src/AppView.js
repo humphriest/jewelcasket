@@ -8,14 +8,6 @@ import SideBar from './modules/sideBar/SideBarView';
 import { HOMEPAGE_VIEW } from './const';
 
 export default class AppView extends React.Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
-
-  componentDidUpdate() {
-    console.log(this.props);
-  }
-
   _renderFooter = () => {
     const { setCurrentView } = this.props;
     return (
