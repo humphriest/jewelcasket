@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import './NavBar.css';
-import { setCurrentView } from '../navigation/NavigationActions';
 import { HOMEPAGE_VIEW, PRODUCTS_VIEW, CONTACT_US, REVIEWS } from '../../const';
 
 export default class NavBar extends Component {
-  componentDidUpdate() {
-    console.log(this.props);
-  }
-
   _renderPage(pageToDisplay) {
     const { setCurrentView } = this.props;
     setCurrentView(pageToDisplay);

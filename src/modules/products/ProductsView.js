@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactModal from 'react-modal';
+import ImageZoom from 'react-medium-image-zoom';
 
 import ImageWithDescription from '../components/ImageWithDescription';
 import {
@@ -17,9 +19,45 @@ export default class ProductsView extends React.Component {
     super(props);
 
     this.pageTitle = 'Rings';
+
+    this.state = {
+      chosenProduct: null,
+    };
   }
 
-  _renderSingleProductModal = () => {};
+  _setProductToShow = chosenProduct => {
+    this.setState({
+      chosenProduct,
+    });
+  };
+
+  _renderSingleProductModal = () => {
+    const { chosenProduct } = this.state;
+    const { isProductModalVisible, toggleProductModal } = this.props;
+
+    if (isProductModalVisible) {
+      const { image, title } = chosenProduct;
+
+      return (
+        <ReactModal
+          ariaHideApp={false}
+          className="modalContainer"
+          onRequestClose={() => toggleProductModal()}
+          isOpen={isProductModalVisible}
+        >
+          <ImageZoom
+            image={{
+              src: image,
+              alt: title,
+              className: 'singleImageContainer',
+            }}
+          />
+          <div className="imageTitle">{title}</div>
+        </ReactModal>
+      );
+    }
+    return null;
+  };
 
   _renderJewellryType = () => {
     const { viewType, toggleProductModal, isProductModalVisible } = this.props;
@@ -61,17 +99,16 @@ export default class ProductsView extends React.Component {
       }
       default:
         productsToShow = getRings();
+        break;
     }
 
     return productsToShow.map((product, key) => {
-      const { image, title } = product;
       return (
         <ImageWithDescription
-          isProductModalVisible={isProductModalVisible}
           toggleProductModal={toggleProductModal}
-          image={image}
-          title={title}
+          product={product}
           key={key}
+          setProductToShow={this._setProductToShow}
         />
       );
     });

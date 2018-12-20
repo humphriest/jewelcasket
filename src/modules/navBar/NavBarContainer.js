@@ -10,7 +10,6 @@ export default connect(
   }),
   dispatch => ({
     setCurrentView: nextView => {
-      // console.log(nextView, 'container view');
       dispatch(setCurrentView(nextView));
     },
   })
