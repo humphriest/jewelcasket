@@ -31,3 +31,22 @@
   border-right: 1px solid #e7e7e7;
   background-color: #f8f8f8;
 }
+.modalContainer {
+  position: absolute;
+  height: 60%;
+  margin-top: 15%;
+  background-color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 0% 4% 2.5% 2.5%;
+  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 1%;
+}
+.singleImageContainer {
+  height: 90%;
+}
+.imageTitle {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2%;
+}

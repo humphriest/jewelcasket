@@ -7,6 +7,8 @@
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-google-maps": "^9.4.5",
+    "react-medium-image-zoom": "^3.0.15",
+    "react-modal": "^3.8.1",
     "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
     "redux": "^4.0.1",
@@ -14,6 +16,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "prepare": "react-scripts start eslint src/**/*.js src/**/*.jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
