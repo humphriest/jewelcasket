@@ -11,10 +11,6 @@ import {
 } from '../../const';
 
 export default class SideBarView extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   _handleSearchChange = () => {
     console.log(this.search.value);
   };
@@ -50,7 +46,32 @@ export default class SideBarView extends React.Component {
   };
 
   _renderVisitUsInstore = () => {
-    return <div>Visit Us In Store</div>;
+    return (
+      <ul className="addressList searchBarContainer">
+        <li className="addressListItem filterTitle">Visit us in store at</li>
+        <br />
+        <a
+          href="https://www.google.ie/maps/place/The+Jewel+Casket/@53.3410833,-6.2592416,19z/data=!4m5!3m4!1s0x48670e9be997bec3:0xfce323dbd8b97cc!8m2!3d53.3410781!4d-6.2586986"
+          className="normaliseLinkText"
+        >
+          <li className="addressListItem">The Jewel Casket</li>
+          <li className="addressListItem">17 South Anne Street</li>
+          <li className="addressListItem">Dublin 2</li>
+          <li className="addressListItem">Ireland</li>
+        </a>
+        <br />
+        <li className="addressListItem">(+353)-1-6711262</li>
+        <br />
+        <hr />
+
+        <li className="searchBarContainer">
+          Or email us at
+          <a className="normaliseLinkText" href="mailto:enquiries@jewelcasket.ie">
+            enquiries@jewelcasket.ie
+          </a>
+        </li>
+      </ul>
+    );
   };
 
   _renderSearchBar = () => {
@@ -71,9 +92,11 @@ export default class SideBarView extends React.Component {
   render() {
     return (
       <div>
-        <div className="sidebar" />
         {this._renderSearchBar()}
         {this._renderFilters()}
+        <hr />
+        {this._renderVisitUsInstore()}
+        <hr />
         <div />
       </div>
     );
