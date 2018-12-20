@@ -20,7 +20,7 @@ export default class SideBarView extends React.Component {
 
     return (
       <div className="filterContainer">
-        <ul style={{ 'list-style-type': 'none' }}>
+        <ul class="unstyledList">
           <li className="filterTitle">Product Categories</li>
           <li onClick={() => displayProductType(VIEW_RINGS)} className="filterOption">
             <span className="greaterThanSign"> > </span>Rings
