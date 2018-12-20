@@ -19,67 +19,55 @@ export default class ProductsView extends React.Component {
     this.pageTitle = 'Rings';
   }
 
-  componentDidMount() {
-    console.log(window.screen.height);
-  }
+  _renderSingleProductModal = () => {};
 
   _renderJewellryType = () => {
-    const { viewType } = this.props;
+    const { viewType, toggleProductModal, isProductModalVisible } = this.props;
+    let productsToShow = getRings();
     switch (viewType) {
       case constants.VIEW_ALL: {
-        return <div />;
+        productsToShow = getRings();
       }
       case constants.VIEW_RINGS: {
         this.pageTitle = 'Rings';
-
-        return getRings().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getRings();
       }
       case constants.VIEW_PENDANTS: {
         this.pageTitle = 'Pendants';
-
-        return getPendants().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getPendants();
       }
       case constants.VIEW_BRACELETS_CHAINS: {
         this.pageTitle = 'Bracelets & Chains';
-
-        return getBraceletsChains().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getBraceletsChains();
       }
       case constants.VIEW_EARRINGS: {
         this.pageTitle = 'Earrings';
-
-        return getEarrings().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getEarrings();
       }
       case constants.VIEW_BROOCHES: {
         this.pageTitle = 'Brooches';
-
-        return getBrooches().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getBrooches();
       }
       case constants.VIEW_CUFFLINKS: {
         this.pageTitle = 'Cufflinks';
-
-        return getCufflinks().map((product, key) => {
-          const { image, title } = product;
-          return <ImageWithDescription image={image} title={title} key={key} />;
-        });
+        productsToShow = getCufflinks();
       }
       default:
-        return <div />;
+        productsToShow = getRings();
     }
+
+    return productsToShow.map((product, key) => {
+      const { image, title } = product;
+      return (
+        <ImageWithDescription
+          isProductModalVisible={isProductModalVisible}
+          toggleProductModal={toggleProductModal}
+          image={image}
+          title={title}
+          key={key}
+        />
+      );
+    });
   };
 
   render() {
@@ -90,6 +78,7 @@ export default class ProductsView extends React.Component {
           <div className="col-md-4 inStore">Visit us in store to see our prices!</div>
         </div>
         <div className="col-md-12 jewellryMiddle">{this._renderJewellryType()}</div>
+        {this._renderSingleProductModal()}
       </div>
     );
   }
