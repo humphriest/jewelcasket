@@ -18,40 +18,30 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar id="bottomMargin">
+        <Navbar id="navStyle">
           <Navbar.Header>
-            <Navbar.Brand
-              className="logo"
-              eventKey={1}
-              onClick={() => this._renderPage(HOMEPAGE_VIEW)}
-            >
+            <Navbar.Brand className="logo" onClick={() => this._renderPage(HOMEPAGE_VIEW)}>
               The Jewel Casket
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
-            <NavItem
-              className="rightOption"
-              eventKey={2}
-              onClick={() => this._renderPage(PRODUCTS_VIEW)}
-            >
+            <NavItem className="rightOption" onClick={() => this._renderPage(PRODUCTS_VIEW)}>
               Products
             </NavItem>
-            <NavItem
-              className="rightOption"
-              eventKey={3}
-              onClick={() => this._renderPage(CONTACT_US)}
-            >
+            <NavItem className="rightOption" onClick={() => this._renderPage(CONTACT_US)}>
               Contact Us
             </NavItem>
-            <NavItem className="rightOption" eventKey={4} onClick={() => this._renderPage(REVIEWS)}>
+            <NavItem className="rightOption" onClick={() => this._renderPage(REVIEWS)}>
               Reviews
             </NavItem>
           </Nav>
         </Navbar>
-        <div id="socialMediaBar">
-          <span>fb</span>
-          <span>tw</span>
-          <span>ins</span>
+        <div id="socialMediaBar" className="col-md-12">
+          <div className="col-md-4 socialMediaIconsContainer">
+            <span className="socialMediaIcon" />
+            <span className="socialMediaIcon">tw</span>
+            <span className="socialMediaIcon">ins</span>
+          </div>
         </div>
       </div>
     );
