@@ -21,11 +21,32 @@
 }
 .socialMediaIcon {
   padding-left: 1%;
-  padding-right: 1%;
+  padding-right: 3%;
   font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+.socialMediaIcon:hover {
+  color: white;
+  text-decoration: none;
 }
 #navStyle {
   margin-bottom: 0;
   padding-bottom: 2.5%;
   padding-top: 4.5%;
+}
+.callUsText {
+  font-size: 15px;
+  margin-right: 5%;
+  margin-left: 1%;
+}
+.smallerSocialMediaIcon {
+  text-align: right;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+.smallerSocialMediaIcon:hover {
+  color: white;
+  text-decoration: none;
 }

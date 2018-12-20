@@ -38,9 +38,29 @@ export default class NavBar extends Component {
         </Navbar>
         <div id="socialMediaBar" className="col-md-12">
           <div className="col-md-4 socialMediaIconsContainer">
-            <span className="socialMediaIcon" />
-            <span className="socialMediaIcon">tw</span>
-            <span className="socialMediaIcon">ins</span>
+            <span className="smallerSocialMediaIcon">
+              <i className="fa fa-phone" />
+              <span className="callUsText">+353 1 6711262</span>
+            </span>
+            <span>
+              <a href="mailto:enquiries@jewelcasket.ie" className="smallerSocialMediaIcon">
+                <i className="fa fa-envelope" />
+                <span className="callUsText">enquiries@jewelcasket.ie</span>
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.facebook.com/The-Jewel-Casket-1865900440191067/"
+                className="socialMediaIcon"
+              >
+                <i className="fa fa-facebook" />
+              </a>
+            </span>
+            <span>
+              <a href="https://www.instagram.com/thejewelcasket/?hl=en" className="socialMediaIcon">
+                <i className="fa fa-instagram" />
+              </a>
+            </span>
           </div>
         </div>
       </div>
