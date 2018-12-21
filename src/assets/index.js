@@ -12,7 +12,7 @@ export const assets = {
 
   pendant1: require('./pendant1.jpeg'),
   pendant2: require('./pendant2.jpeg'),
-  pendant3: require('./pendant3.jpeg'),
+  pendant3: require('./pendant3.jpg'),
   pendant4: require('./pendant4.jpeg'),
   pendant5: require('./pendant5.jpeg'),
   pendant6: require('./pendant6.jpeg'),
