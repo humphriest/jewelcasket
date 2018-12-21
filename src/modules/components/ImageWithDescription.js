@@ -15,7 +15,7 @@ export default class ImageWithDescription extends React.Component {
     } = this.props;
 
     return (
-      <div className="col-md-3">
+      <div className="col-md-3" id="imageContainerHeight">
         <div className="imageContainer" onClick={this._toggleModalAndSetProduct}>
           <img width={'80%'} src={image} />
           <div className="titleContainer">{title}</div>

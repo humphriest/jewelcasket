@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-import ImageZoom from 'react-medium-image-zoom';
+import ReactImageMagnify from 'react-image-magnify';
 
 import ImageWithDescription from '../components/ImageWithDescription';
 import {
@@ -45,11 +45,19 @@ export default class ProductsView extends React.Component {
           onRequestClose={() => toggleProductModal()}
           isOpen={isProductModalVisible}
         >
-          <ImageZoom
-            image={{
-              src: image,
-              alt: title,
-              className: 'singleImageContainer',
+          <ReactImageMagnify
+            {...{
+              smallImage: {
+                alt: title,
+                isFluidWidth: true,
+                src: image,
+              },
+              largeImage: {
+                src: image,
+                width: 1300,
+                height: 1600,
+              },
+              enlargedImagePosition: 'over',
             }}
           />
           <div className="imageTitle">{title}</div>
