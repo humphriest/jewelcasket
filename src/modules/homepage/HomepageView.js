@@ -4,12 +4,13 @@ import Slider from 'react-slick';
 import WelcomeImage from '../components/WelcomeImage';
 import './Homepage.css';
 import { assets } from '../../assets';
-import { VIEW_RINGS, VIEW_EARRINGS, PRODUCTS_VIEW } from '../../const';
+import { VIEW_RINGS, VIEW_PENDANTS, PRODUCTS_VIEW } from '../../const';
 
 export default class Homepage extends React.Component {
   goToSection = productType => {
-    const { setCurrentView } = this.props;
+    const { setCurrentView, displayProductType } = this.props;
     setCurrentView(PRODUCTS_VIEW);
+    displayProductType(productType);
   };
 
   _renderAboutUsSection = () => {
@@ -40,7 +41,7 @@ export default class Homepage extends React.Component {
       <div className="col-md-12 categoriesSectionContainer">
         <div className="col-md-6">
           <img
-            onClick={() => this.goToSection(VIEW_EARRINGS)}
+            onClick={() => this.goToSection(VIEW_RINGS)}
             className="categoriesImageContainer"
             src={assets.homepageRing}
           />
@@ -48,11 +49,11 @@ export default class Homepage extends React.Component {
         </div>
         <div className="col-md-6">
           <img
-            onClick={() => this.goToSection(VIEW_EARRINGS)}
+            onClick={() => this.goToSection(VIEW_PENDANTS)}
             className="categoriesImageContainer"
-            src={assets.homepageRing}
+            src={assets.homepagePendant}
           />
-          <div id="textOverImage">[ Bracelets ]</div>
+          <div id="textOverImage">[ Pendants ]</div>
         </div>
       </div>
     );
