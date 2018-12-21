@@ -2,6 +2,7 @@ import React from 'react';
 
 import './WelcomeImage.css';
 import { PRODUCTS_VIEW } from '../../const';
+import { assets } from '../../assets';
 
 export default class WelcomeImage extends React.Component {
   constructor(props) {
@@ -39,17 +40,28 @@ export default class WelcomeImage extends React.Component {
     );
   };
 
+  _renderOverImageText = () => {
+    return (
+      <div className="overImageText">
+        Modern & Antique Jewellery
+        <div className="smallerOverImageText">
+          We delivery high quality products at competitive prices
+        </div>
+      </div>
+    );
+  };
+
   render() {
     const { imageWidth } = this.state;
 
     return (
       <div className="col-md-12 welcomeContainer">
-        <img
-          className="image"
-          width={imageWidth}
-          src={require('../../assets/backgroundPhoto7.jpg')}
-        />
-        <div>{this._renderShopNowButton()}</div>
+        <img className="image" width={imageWidth} src={assets.background} />
+        <div className="col-md-3" />
+        <div className="col-md-4; position:absolute;">
+          {this._renderOverImageText()}
+          <div>{this._renderShopNowButton()}</div>
+        </div>
       </div>
     );
   }
