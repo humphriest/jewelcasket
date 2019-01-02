@@ -41,8 +41,9 @@ export const assets = {
 
   ringsBackground: require('./ringsBackground.jpg'),
   ringsBackground2: require('./ringsBackground2.jpg'),
-
-  background: require('./backgroundPhoto7.jpg'),
+  background: require('./mainBackground.jpg'),
+  homepageRing: require('./homepageRing.jpg'),
+  homepagePendant: require('./homepagePendant.jpg'),
 };
 
 export const ringsAssets = [

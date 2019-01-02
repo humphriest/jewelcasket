@@ -35,7 +35,35 @@ div {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .aboutUsContainer {
-  width: 80%;
+  padding-right: 10%;
   padding-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  font-size: 18px;
+}
+.ourProductsTitle {
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+}
+.categoriesSectionContainer {
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.categoriesImageContainer {
+  width: 90%;
+}
+#textOverImage {
+  color: whitesmoke;
+  font-size: 40px;
+  bottom: 25%;
+  left: 35%;
+  position: absolute;
+}
+#textOverImage:hover {
+  cursor: pointer;
+}
+.categoriesImageContainer:hover {
+  opacity: 0.75;
+  cursor: pointer;
 }
