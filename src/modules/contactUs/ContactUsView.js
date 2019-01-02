@@ -12,11 +12,12 @@ export default class ContactUsView extends React.Component {
         </GoogleMap>
       ))
     );
+
     return (
       <div id="contactUsContainer">
         <div className="title">About Us</div>
-        <p className="contactUs">
-          <p className="aboutContainer">
+        <div className="contactUs">
+          <div className="aboutContainer">
             The Jewel Casket is a family run Jewellers with over 30 years of experience. For
             generations we have been providing customers with a reliable expertise with our top of
             the line products.
@@ -29,7 +30,7 @@ export default class ContactUsView extends React.Component {
                 <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
               </li>
             </ul>
-          </p>
+          </div>
           <div className="col-md-6">
             <ul className="addressList">
               <li className="addressListItem" id="listTitle">
@@ -49,9 +50,9 @@ export default class ContactUsView extends React.Component {
               <li className="addressListItem">(+353)-1-6711262</li>
             </ul>
           </div>
-          <p className="col-md-6">
-            <p id="openingHoursTitle">Opening Hours</p>
-            <p className="col-md-6">
+          <div className="col-md-6">
+            <div id="openingHoursTitle">Opening Hours</div>
+            <div className="col-md-6">
               <ul className="addressList">
                 <li className="addressListItem">Monday</li>
                 <li className="addressListItem">Tuesday</li>
@@ -61,8 +62,8 @@ export default class ContactUsView extends React.Component {
                 <li className="addressListItem">Saturday</li>
                 <li className="addressListItem">Sunday</li>
               </ul>
-            </p>
-            <p className="col-md-6">
+            </div>
+            <div className="col-md-6">
               <ul className="addressList">
                 <li className="addressListItem">Closed</li>
                 <li className="addressListItem">9.30am - 5.30pm</li>
@@ -72,16 +73,16 @@ export default class ContactUsView extends React.Component {
                 <li className="addressListItem">9.30am - 5.30pm</li>
                 <li className="addressListItem">Closed</li>
               </ul>
-            </p>
-          </p>
-        </p>
+            </div>
+          </div>
+        </div>
         <br />
         <div id="contactUsContainer">
           <div className="col-md-12" id="aboveMapMargin">
             <MyMapComponent
               isMarkerShown
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_NkXItHgSzgMuS0x5pfbIABQbtDsv2QI"
-              loadingElement={<div style={{ height: `100%` }} />}
+              loadingElement={<div style={{ height: `400px` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
             />
