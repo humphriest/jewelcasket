@@ -8,6 +8,29 @@ import SideBar from './modules/sideBar/SideBarView';
 import { HOMEPAGE_VIEW } from './const';
 
 export default class AppView extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.mainBody = 0;
+    this.state = {
+      mainBodyHeight: null,
+    };
+  }
+
+  componentDidUpdate() {
+    const { mainBodyHeight } = this.state;
+
+    if (
+      this.mainBody &&
+      this.mainBody.clientHeight &&
+      this.mainBody.clientHeight !== mainBodyHeight
+    ) {
+      this.setState({
+        mainBodyHeight: this.mainBody.clientHeight,
+      });
+    }
+  }
+
   _renderFooter = () => {
     const { setCurrentView } = this.props;
     return (
@@ -19,16 +42,25 @@ export default class AppView extends React.Component {
 
   _renderMiddle = () => {
     const { currentView, displayProductType } = this.props;
+    const { mainBodyHeight } = this.state;
+
     if (currentView === HOMEPAGE_VIEW) {
       return <div className="middleContainer">{renderView(this.props)}</div>;
     }
     return (
       <div className="middleContainer">
         <div className="col-md-12 sideBarContainer">
-          <div className="col-md-3 sideBorder" style={{ height: window.screen.height }}>
+          <div className="col-md-3 sideBorder" style={{ height: mainBodyHeight }}>
             <SideBar displayProductType={displayProductType} />
           </div>
-          <div className="col-md-9">{renderView(this.props)}</div>
+          <div
+            ref={ref => {
+              this.mainBody = ref;
+            }}
+            className="col-md-9"
+          >
+            {renderView(this.props)}
+          </div>
         </div>
       </div>
     );
