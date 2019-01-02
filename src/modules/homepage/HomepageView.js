@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 import WelcomeImage from '../components/WelcomeImage';
 import './Homepage.css';
