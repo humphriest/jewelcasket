@@ -41,7 +41,7 @@ export default class AppView extends React.Component {
   };
 
   _renderMiddle = () => {
-    const { currentView, displayProductType } = this.props;
+    const { currentView, displayProductType, setCurrentView } = this.props;
     const { mainBodyHeight } = this.state;
 
     if (currentView === HOMEPAGE_VIEW) {
@@ -51,7 +51,11 @@ export default class AppView extends React.Component {
       <div className="middleContainer">
         <div className="col-md-12 sideBarContainer">
           <div className="col-md-3 sideBorder" style={{ height: mainBodyHeight }}>
-            <SideBar displayProductType={displayProductType} />
+            <SideBar
+              setCurrentView={setCurrentView}
+              currentView={currentView}
+              displayProductType={displayProductType}
+            />
           </div>
           <div
             ref={ref => {

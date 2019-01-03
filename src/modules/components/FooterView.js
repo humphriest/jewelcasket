@@ -1,8 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import './FooterView.css';
-import { assets } from '../../assets';
 
 export default class FooterView extends React.Component {
   render() {
