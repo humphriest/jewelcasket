@@ -67,3 +67,7 @@ div {
   opacity: 0.75;
   cursor: pointer;
 }
+.reviewsContainer {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}

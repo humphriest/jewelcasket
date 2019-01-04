@@ -1,6 +1,8 @@
 import React from 'react';
 
 import WelcomeImage from '../components/WelcomeImage';
+import ReviewCarousel from '../components/ReviewCorousel';
+
 import './Homepage.css';
 import { assets } from '../../assets';
 import { VIEW_RINGS, VIEW_PENDANTS, PRODUCTS_VIEW } from '../../const';
@@ -58,6 +60,12 @@ export default class Homepage extends React.Component {
     );
   };
 
+  _renderReviews = () => (
+    <div className="col-md-12 reviewsContainer">
+      <ReviewCarousel />
+    </div>
+  );
+
   render() {
     const { setCurrentView } = this.props;
     return (
@@ -67,6 +75,8 @@ export default class Homepage extends React.Component {
         {this._renderAboutUsSection()}
 
         {this._renderCategoryImagesSections()}
+
+        {this._renderReviews()}
       </div>
     );
   }
