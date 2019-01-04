@@ -48,6 +48,15 @@
   color: black;
   text-decoration: none;
 }
-.unstyledList {
+.sideBarContainer {
   list-style-type: none;
+}
+
+.sideBarContainer li {
+  margin-top: 5px;
+  font-size: 16px;
+  margin-left: 5%;
+}
+.paddingLeft {
+  padding-left: 15%;
 }
