@@ -8,6 +8,7 @@ import {
   VIEW_EARRINGS,
   VIEW_BROOCHES,
   VIEW_CUFFLINKS,
+  PRODUCTS_VIEW,
 } from '../../const';
 
 export default class SideBarView extends React.Component {
@@ -15,29 +16,44 @@ export default class SideBarView extends React.Component {
     console.log(this.search.value);
   };
 
-  _renderFilters = () => {
-    const { displayProductType } = this.props;
+  _handleSelectProductType = productType => {
+    const { displayProductType, setCurrentView, currentView } = this.props;
 
+    if (currentView === PRODUCTS_VIEW) {
+      displayProductType(productType);
+    } else {
+      setCurrentView(PRODUCTS_VIEW);
+      displayProductType(productType);
+    }
+  };
+
+  _renderFilters = () => {
     return (
       <div className="filterContainer">
         <ul className="unstyledList">
           <li className="filterTitle">Product Categories</li>
-          <li onClick={() => displayProductType(VIEW_RINGS)} className="filterOption">
+          <li onClick={() => this._handleSelectProductType(VIEW_RINGS)} className="filterOption">
             <span className="greaterThanSign"> > </span>Rings
           </li>
-          <li onClick={() => displayProductType(VIEW_PENDANTS)} className="filterOption">
+          <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)} className="filterOption">
             <span className="greaterThanSign"> > </span>Pendants
           </li>
-          <li onClick={() => displayProductType(VIEW_BRACELETS_CHAINS)} className="filterOption">
+          <li
+            onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}
+            className="filterOption"
+          >
             <span className="greaterThanSign"> > </span>Bracelets & Chains
           </li>
-          <li onClick={() => displayProductType(VIEW_EARRINGS)} className="filterOption">
+          <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)} className="filterOption">
             <span className="greaterThanSign"> > </span>Earrings
           </li>
-          <li onClick={() => displayProductType(VIEW_BROOCHES)} className="filterOption">
+          <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)} className="filterOption">
             <span className="greaterThanSign"> > </span>Brooches
           </li>
-          <li onClick={() => displayProductType(VIEW_CUFFLINKS)} className="filterOption">
+          <li
+            onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}
+            className="filterOption"
+          >
             <span className="greaterThanSign"> > </span>Cufflinks
           </li>
         </ul>

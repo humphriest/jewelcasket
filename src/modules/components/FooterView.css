@@ -15,6 +15,7 @@
 .footerDescriptions {
   margin-top: 10px;
   font-size: 16px;
+  cursor: pointer;
 }
 .footerColumnContainer {
   margin-top: 15px;
@@ -24,7 +25,7 @@
   list-style-type: none;
   padding-left: 0;
 }
-.addressListItem {
+.addressList li {
   margin-top: 5px;
   font-size: 16px;
 }

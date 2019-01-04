@@ -3,7 +3,6 @@ import {
   pendantsAssets,
   braceletsChainsAssets,
   earringsAssets,
-  broochAssets,
   broochesAssets,
   cufflinksAssets,
 } from '../assets';
@@ -17,6 +16,7 @@ const ringsTitles = [
   '18 Carat Emerald & Diamond Ring',
   '18 Carat White Gold Aquamarine & Diamon Cluster Ring',
 ];
+
 const pendantsTitles = [
   'Amethyst & Diamond Antique Pendant',
   'Tourmaline & Diamond Victorian Pendant/Brooch',
