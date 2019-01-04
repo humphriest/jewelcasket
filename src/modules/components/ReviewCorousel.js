@@ -17,7 +17,7 @@ export default class ReviewCorousel extends React.Component {
             <i id="quotes" className="fa fa-quote-right fa-3x" />
             <div className="reviewBody">
               <div className="reviewAuthor">{review.name}</div>
-              {/* <div>{review.date}</div> */}
+              <div>{review.date}</div>
               <div className="reviewComment">{review.comment}</div>
               <div className="reviewStar">
                 <StarRatings
