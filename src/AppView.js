@@ -32,10 +32,14 @@ export default class AppView extends React.Component {
   }
 
   _renderFooter = () => {
-    const { setCurrentView } = this.props;
+    const { currentView, displayProductType, setCurrentView } = this.props;
     return (
       <div className="footerContainer">
-        <FooterView setCurrentView={setCurrentView} />
+        <FooterView
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+          displayProductType={displayProductType}
+        />
       </div>
     );
   };

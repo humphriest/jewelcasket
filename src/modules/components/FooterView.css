@@ -15,6 +15,7 @@
 .footerDescriptions {
   margin-top: 10px;
   font-size: 16px;
+  cursor: pointer;
 }
 .footerColumnContainer {
   margin-top: 15px;
