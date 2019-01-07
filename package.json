@@ -11,9 +11,12 @@
     "react-modal": "^3.8.1",
     "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
+    "react-slick": "^0.23.2",
+    "react-star-ratings": "^2.3.0",
     "redux": "^4.0.1",
     "redux-storage": "^4.1.2",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "spacetime": "^5.1.0"
   },
   "scripts": {
     "prepare": "react-scripts start eslint src/**/*.js src/**/*.jsx",

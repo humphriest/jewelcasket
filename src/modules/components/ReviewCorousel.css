@@ -1,0 +1,45 @@
+.paddingHorizontal {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.center {
+  text-align: center;
+}
+.reviewContainer {
+  padding: 15% 5% 15% 5%;
+  outline: none;
+}
+.reviewBoundary {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5% 5% 5% 5%;
+}
+.profileImage {
+  position: fixed;
+  width: 1.6%;
+  border-radius: 50%;
+  height: 22%;
+  overflow: visible;
+  bottom: 70%;
+  margin-left: 0.75%;
+}
+.reviewBody {
+  padding-top: 20%;
+  text-align: left;
+}
+.reviewAuthor {
+  font-size: 28px;
+  font-style: normal !important;
+}
+.reviewComment {
+  padding-top: 2%;
+  font-size: 16px;
+  font-style: normal !important;
+}
+.reviewStar {
+  margin-top: 4%;
+}
+#quotes {
+  float: right;
+  color: lightgray;
+}

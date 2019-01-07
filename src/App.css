@@ -18,7 +18,7 @@
   color: white;
 }
 div {
-  font-style: oblique;
+  font-style: normal;
 }
 .parentContainer {
   flex: 1;

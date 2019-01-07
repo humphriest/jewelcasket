@@ -36,6 +36,7 @@
   padding: 0% 4% 5% 2.5%;
   box-shadow: 1px 1px 1px 1px grey;
   border-radius: 1%;
+  outline: none;
 }
 .singleImageContainer {
   height: 90%;
