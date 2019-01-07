@@ -10,15 +10,15 @@
   margin-top: 2%;
   margin-left: 5%;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.2vw;
 }
 #listTitle {
-  font-size: 22px;
+  font-size: 1.4vw;
   color: black;
   font-weight: 600;
 }
 #openingHoursTitle {
-  font-size: 22px;
+  font-size: 1.4vw;
   color: black;
   font-weight: 600;
   text-align: center;

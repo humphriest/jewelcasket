@@ -24,7 +24,7 @@
 }
 .overImageText {
   position: absolute;
-  font-size: 5em;
+  font-size: 7vw;
   font-weight: 300;
   top: 35%;
   margin-left: 25%;
@@ -33,5 +33,5 @@
   text-align: center;
 }
 .overImageText .smallerOverImageText {
-  font-size: 0.4em;
+  font-size: 2vw;
 }

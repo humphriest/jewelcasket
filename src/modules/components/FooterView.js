@@ -27,7 +27,7 @@ export default class FooterView extends React.Component {
     return (
       <div className="col-md-12 footerContainer">
         <div className="col-md-10 middle">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <div className="footerColumnContainer">
               <div className="footerTitles">Contact Us</div>
               <ul className="addressList">
@@ -41,7 +41,7 @@ export default class FooterView extends React.Component {
               </ul>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6">
             <div className="footerColumnContainer">
               <div className="footerTitles">Shop By</div>
               <div
@@ -81,9 +81,6 @@ export default class FooterView extends React.Component {
                 Cufflinks
               </div>
             </div>
-          </div>
-          <div className="col-md-4">
-            <div className="footerTitles">About Us</div>
           </div>
         </div>
       </div>

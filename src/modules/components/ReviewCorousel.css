@@ -1,9 +1,10 @@
 .paddingHorizontal {
-  padding-left:5%;
+  padding-left: 5%;
   padding-right: 5%;
 }
-.center {
+.sliderSettingsStyle {
   text-align: center;
+  cursor: pointer;
 }
 .reviewContainer {
   padding: 15% 5% 15% 5%;
@@ -19,21 +20,22 @@
   width: 1.6%;
   border-radius: 50%;
   height: 22%;
+  width: auto;
   overflow: visible;
-  bottom: 70%;
+  top: 0;
   margin-left: 0.75%;
 }
 .reviewBody {
-  padding-top: 20%;
+  padding-top: 10%;
   text-align: left;
 }
 .reviewAuthor {
-  font-size: 28px;
+  font-size: 2vw;
   font-style: normal !important;
 }
 .reviewComment {
   padding-top: 2%;
-  font-size: 16px;
+  font-size: 1vw;
   font-style: normal !important;
 }
 .reviewStar {

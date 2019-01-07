@@ -2,12 +2,12 @@
   margin-top: 10%;
 }
 .filterTitle {
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 .filterOption {
-  font-size: 16px;
+  font-size: 1.2vw;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 5%;
@@ -35,7 +35,7 @@
   color: white;
 }
 .greaterThanSign {
-  font-size: 12px;
+  font-size: 1vw;
   margin-right: 5%;
 }
 .normaliseLinkText {
@@ -54,7 +54,7 @@
 
 .sideBarContainer li {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 1.1vw;
   margin-left: 5%;
 }
 .paddingLeft {
