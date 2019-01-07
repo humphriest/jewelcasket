@@ -15,16 +15,16 @@
   padding: 5% 5% 5% 5%;
 }
 .profileImage {
-  position: absolute;
-  width: 1.5%;
+  position: fixed;
+  width: 1.6%;
   border-radius: 50%;
-  height: 25%;
+  height: 22%;
   overflow: visible;
   bottom: 70%;
   margin-left: 0.75%;
 }
 .reviewBody {
-  padding-top: 10%;
+  padding-top: 20%;
   text-align: left;
 }
 .reviewAuthor {
