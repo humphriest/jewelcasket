@@ -1,18 +1,12 @@
 .filterContainer {
-  margin-top: 10%;
+  margin-top: 25%;
 }
 .filterTitle {
   font-size: 1.5vw;
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.filterOption {
-  font-size: 1.2vw;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  cursor: pointer;
-}
+
 #sidebar {
   height: 80%;
   border-right: 5px solid black;

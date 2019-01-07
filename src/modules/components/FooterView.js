@@ -42,45 +42,17 @@ export default class FooterView extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="footerColumnContainer">
+            <ul className="footerColumnContainer addressList canClick">
               <div className="footerTitles">Shop By</div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_RINGS)}
-                className="footerDescriptions"
-              >
-                Rings
-              </div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_PENDANTS)}
-                className="footerDescriptions"
-              >
-                Pendants
-              </div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}
-                className="footerDescriptions"
-              >
+              <li onClick={() => this._handleSelectProductType(VIEW_RINGS)}>Rings</li>
+              <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)}>Pendants</li>
+              <li onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}>
                 Bracelets & Chains
-              </div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_EARRINGS)}
-                className="footerDescriptions"
-              >
-                Earrings
-              </div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_BROOCHES)}
-                className="footerDescriptions"
-              >
-                Brooches
-              </div>
-              <div
-                onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}
-                className="footerDescriptions"
-              >
-                Cufflinks
-              </div>
-            </div>
+              </li>
+              <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)}>Earrings</li>
+              <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)}>Brooches</li>
+              <li onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}>Cufflinks</li>
+            </ul>
           </div>
         </div>
       </div>

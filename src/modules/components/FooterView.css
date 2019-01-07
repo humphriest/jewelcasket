@@ -10,11 +10,10 @@
 }
 .footerTitles {
   font-weight: 400;
-  font-size: 26px;
+  font-size: 2vw;
 }
 .footerDescriptions {
   margin-top: 10px;
-  font-size: 16px;
   cursor: pointer;
 }
 .footerColumnContainer {
@@ -27,9 +26,12 @@
 }
 .addressList li {
   margin-top: 5px;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 .middle {
   padding-left: 20%;
   margin-top: 0;
+}
+.canClick li {
+  cursor: pointer;
 }

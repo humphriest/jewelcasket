@@ -23,13 +23,11 @@ export default class ContactUsView extends React.Component {
             the line products.
             <br />
             <br />
-            <ul className="addressList">
-              <li className="addressListItem">
-                For more assistance or pricing, come visit us instore to see our stunning and
-                elegant products. Or email us at
-                <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
-              </li>
-            </ul>
+            <div className="addressList">
+              For more assistance or pricing, come visit us instore to see our stunning and elegant
+              products. Or email us at
+              <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
+            </div>
           </div>
           <div className="col-md-6">
             <ul className="addressList">

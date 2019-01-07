@@ -31,25 +31,22 @@ export default class SideBarView extends React.Component {
     return (
       <ul className="filterContainer sideBarContainer paddingLeft">
         <span className="filterTitle">Product Categories</span>
-        <li onClick={() => this._handleSelectProductType(VIEW_RINGS)} className="filterOption">
+        <li onClick={() => this._handleSelectProductType(VIEW_RINGS)}>
           <span className="greaterThanSign"> > </span>Rings
         </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)} className="filterOption">
+        <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)}>
           <span className="greaterThanSign"> > </span>Pendants
         </li>
-        <li
-          onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}
-          className="filterOption"
-        >
+        <li onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}>
           <span className="greaterThanSign"> > </span>Bracelets & Chains
         </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)} className="filterOption">
+        <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)}>
           <span className="greaterThanSign"> > </span>Earrings
         </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)} className="filterOption">
+        <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)}>
           <span className="greaterThanSign"> > </span>Brooches
         </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)} className="filterOption">
+        <li onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}>
           <span className="greaterThanSign"> > </span>Cufflinks
         </li>
         <br />
@@ -107,8 +104,6 @@ export default class SideBarView extends React.Component {
   render() {
     return (
       <div>
-        {this._renderSearchBar()}
-        <hr />
         {this._renderFilters()}
         <hr />
         {this._renderVisitUsInstore()}
