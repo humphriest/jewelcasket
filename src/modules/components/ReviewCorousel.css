@@ -6,9 +6,8 @@
   text-align: center;
 }
 .reviewContainer {
-  /* margin-left: 15%;
-  margin-right: 15%; */
   padding: 15% 5% 15% 5%;
+  outline: none;
 }
 .reviewBoundary {
   border: 1px solid lightgray;
