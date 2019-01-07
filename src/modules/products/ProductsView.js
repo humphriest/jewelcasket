@@ -22,6 +22,7 @@ export default class ProductsView extends React.Component {
 
     this.state = {
       chosenProduct: null,
+      totalNumChosenProduct: getRings().length,
     };
   }
 
@@ -69,6 +70,8 @@ export default class ProductsView extends React.Component {
 
   _renderJewellryType = () => {
     const { viewType, toggleProductModal, isProductModalVisible } = this.props;
+    const { totalNumChosenProduct } = this.state;
+
     let productsToShow = getRings();
     switch (viewType) {
       case constants.VIEW_ALL: {
@@ -92,7 +95,6 @@ export default class ProductsView extends React.Component {
       }
       case constants.VIEW_EARRINGS: {
         this.pageTitle = 'Earrings';
-        productsToShow = getEarrings();
         break;
       }
       case constants.VIEW_BROOCHES: {
@@ -110,6 +112,11 @@ export default class ProductsView extends React.Component {
         break;
     }
 
+    if (totalNumChosenProduct !== productsToShow.length) {
+      this.setState({
+        totalNumChosenProduct: productsToShow.length,
+      });
+    }
     return productsToShow.map((product, key) => {
       return (
         <ImageWithDescription
@@ -123,13 +130,19 @@ export default class ProductsView extends React.Component {
   };
 
   render() {
+    const { totalNumChosenProduct } = this.state;
+
     return (
       <div className="col-md-12 marginTop">
         <div className="col-md-12 pageMiddle">
           <div className="col-md-5 title">{this.pageTitle}</div>
           <div className="col-md-4 inStore">Visit us in store to see our prices!</div>
         </div>
-        <div className="col-md-12 jewellryMiddle">{this._renderJewellryType()}</div>
+        <div className="col-md-12 jewellryMiddle">
+          <div className={totalNumChosenProduct <= 4 ? 'singleLineProducts' : null}>
+            {this._renderJewellryType()}
+          </div>
+        </div>
         {this._renderSingleProductModal()}
       </div>
     );

@@ -17,11 +17,12 @@
   top: 0;
 }
 .socialMediaIconsContainer {
-  text-align: right;
+  padding-left: 5%;
+  text-align: left;
 }
 .socialMediaIcon {
   padding-left: 1%;
-  padding-right: 3%;
+  padding-right: 2%;
   font-size: 22px;
   color: white;
   text-decoration: none;
@@ -37,7 +38,7 @@
 }
 .callUsText {
   font-size: 15px;
-  margin-right: 5%;
+  margin-right: 2%;
   margin-left: 1%;
 }
 .smallerSocialMediaIcon {

@@ -1,13 +1,18 @@
 .titleContainer {
   margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .imageContainer {
   margin-bottom: 10%;
-  border: 2px solid rgb(214, 213, 213);
-  border-radius: 1%;
   cursor: pointer;
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
 }
 #imageContainerHeight {
   height: 30em;
+}
+.productImage {
+  resize: both;
+  padding-top: 4%;
 }

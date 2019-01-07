@@ -1,4 +1,6 @@
 import React from 'react';
+import Card from '@material-ui/core/Card';
+
 import './ImageWithDescription.css';
 
 export default class ImageWithDescription extends React.Component {
@@ -16,10 +18,12 @@ export default class ImageWithDescription extends React.Component {
 
     return (
       <div className="col-md-3" id="imageContainerHeight">
-        <div className="imageContainer" onClick={this._toggleModalAndSetProduct}>
-          <img width={'80%'} src={image} />
-          <div className="titleContainer">{title}</div>
-        </div>
+        <Card className="imageContainer">
+          <div onClick={this._toggleModalAndSetProduct}>
+            <img width={'80%'} src={image} className="productImage" />
+            <div className="titleContainer">{title}</div>
+          </div>
+        </Card>
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import './NavBar.css';
-import { HOMEPAGE_VIEW, PRODUCTS_VIEW, CONTACT_US, REVIEWS } from '../../const';
+import { HOMEPAGE_VIEW, PRODUCTS_VIEW, CONTACT_US } from '../../const';
 
 export default class NavBar extends Component {
   _renderPage(pageToDisplay) {
@@ -26,13 +26,10 @@ export default class NavBar extends Component {
             <NavItem className="rightOption" onClick={() => this._renderPage(CONTACT_US)}>
               Contact Us
             </NavItem>
-            <NavItem className="rightOption" onClick={() => this._renderPage(REVIEWS)}>
-              Reviews
-            </NavItem>
           </Nav>
         </Navbar>
         <div id="socialMediaBar" className="col-md-12">
-          <div className="col-md-4 socialMediaIconsContainer">
+          <div className="socialMediaIconsContainer">
             <span className="smallerSocialMediaIcon">
               <i className="fa fa-phone" />
               <span className="callUsText">+353 1 6711262</span>
