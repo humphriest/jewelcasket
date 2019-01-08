@@ -1,6 +1,5 @@
 export const assets = {
   main: require('./main.jpg'),
-  logo: require('./logo.png'),
 
   ring1: require('./ring1.jpeg'),
   ring2: require('./ring2.jpeg'),
@@ -39,8 +38,6 @@ export const assets = {
   cufflinks2: require('./cufflinks2.jpeg'),
   cufflinks3: require('./cufflinks3.jpeg'),
 
-  ringsBackground: require('./ringsBackground.jpg'),
-  ringsBackground2: require('./ringsBackground2.jpg'),
   background: require('./mainBackground.jpg'),
   homepageRing: require('./homepageRing.jpg'),
   homepagePendant: require('./homepagePendant.jpg'),
