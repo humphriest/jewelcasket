@@ -50,6 +50,7 @@
   margin-top: 5px;
   font-size: 1.1vw;
   margin-left: 5%;
+  cursor: pointer;
 }
 .paddingLeft {
   padding-left: 15%;

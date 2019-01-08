@@ -31,13 +31,15 @@ export default class FooterView extends React.Component {
             <div className="footerColumnContainer">
               <div className="footerTitles">Contact Us</div>
               <ul className="addressList">
-                <li className="addressListItem">The Jewel Casket</li>
-                <li className="addressListItem">17 South Anne Street</li>
-                <li className="addressListItem">Dublin 2</li>
-                <li className="addressListItem">Ireland</li>
+                <li>The Jewel Casket</li>
+                <li>17 South Anne Street</li>
+                <li>Dublin 2</li>
+                <li>Ireland</li>
                 <br />
-                <li className="addressListItem">(+353)-1-6711262</li>
-                <li className="addressListItem">enquiries@jewelCasket.ie</li>
+                <li>(+353)-1-6711262</li>
+                <li>enquiries@jewelCasket.ie</li>
+                <br />
+                <li> Copyright (C) 2010 The Jewel Casket. All Rights Reserved</li>
               </ul>
             </div>
           </div>
