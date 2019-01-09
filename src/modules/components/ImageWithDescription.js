@@ -14,7 +14,6 @@ export default class ImageWithDescription extends React.Component {
     const {
       isProductModalVisible,
       product: { image, title },
-      isMobile,
     } = this.props;
 
     return (

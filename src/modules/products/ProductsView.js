@@ -68,7 +68,7 @@ export default class ProductsView extends React.Component {
     return null;
   };
 
-  _renderJewellryType = () => {
+  _renderJewelleryType = () => {
     const { viewType, toggleProductModal, isProductModalVisible, isMobile } = this.props;
     const { totalNumChosenProduct } = this.state;
 
@@ -141,9 +141,9 @@ export default class ProductsView extends React.Component {
           <div className="col-xs-5 title">{this.pageTitle}</div>
           <div className="col-xs-4 inStore">Visit us in store to see our prices!</div>
         </div>
-        <div className="col-xs-12 jewellryMiddle">
+        <div className="col-xs-12 jewelleryMiddle">
           <div className={totalNumChosenProduct <= 4 ? 'singleLineProducts' : null}>
-            {this._renderJewellryType()}
+            {this._renderJewelleryType()}
           </div>
         </div>
         {this._renderSingleProductModal()}
