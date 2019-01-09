@@ -10,12 +10,13 @@
   background-color: transparent;
   color: white;
   border-radius: 20;
-  border-width: 3px;
+  border-width: 0.2vw;
   border-color: white;
   font-size: 1vw;
   font-weight: bold;
   width: 16%;
   height: 5%;
+  outline: none !important;
 }
 .image {
   opacity: 0.8;
