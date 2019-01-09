@@ -28,7 +28,7 @@ export default class NavBar extends Component {
             </NavItem>
           </Nav>
         </Navbar>
-        <div id="socialMediaBar" className="col-md-12">
+        <div id="socialMediaBar" className="col-xs-12">
           <div className="socialMediaIconsContainer">
             <span className="smallerSocialMediaIcon">
               <i className="fa fa-phone" />

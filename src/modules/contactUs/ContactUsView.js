@@ -29,7 +29,7 @@ export default class ContactUsView extends React.Component {
               <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-xs-6">
             <ul className="addressList">
               <li className="addressListItem" id="listTitle">
                 You can find us at
@@ -48,9 +48,9 @@ export default class ContactUsView extends React.Component {
               <li className="addressListItem">(+353)-1-6711262</li>
             </ul>
           </div>
-          <div className="col-md-6">
+          <div className="col-xs-6">
             <div id="openingHoursTitle">Opening Hours</div>
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <ul className="addressList">
                 <li className="addressListItem">Monday</li>
                 <li className="addressListItem">Tuesday</li>
@@ -61,7 +61,7 @@ export default class ContactUsView extends React.Component {
                 <li className="addressListItem">Sunday</li>
               </ul>
             </div>
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <ul className="addressList">
                 <li className="addressListItem">Closed</li>
                 <li className="addressListItem">9.30am - 5.30pm</li>
@@ -76,7 +76,7 @@ export default class ContactUsView extends React.Component {
         </div>
         <br />
         <div id="contactUsContainer">
-          <div className="col-md-12" id="aboveMapMargin">
+          <div className="col-xs-12" id="aboveMapMargin">
             <MyMapComponent
               isMarkerShown
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_NkXItHgSzgMuS0x5pfbIABQbtDsv2QI"

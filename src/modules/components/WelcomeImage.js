@@ -55,10 +55,10 @@ export default class WelcomeImage extends React.Component {
     const { imageWidth } = this.state;
 
     return (
-      <div className="col-md-12 welcomeContainer">
+      <div className="col-xs-12 welcomeContainer">
         <img className="image" width={imageWidth} src={assets.background} />
-        <div className="col-md-3" />
-        <div className="col-md-4; position:absolute;">
+        <div className="col-xs-3" />
+        <div className="col-xs-4; position:absolute;">
           {this._renderOverImageText()}
           <div>{this._renderShopNowButton()}</div>
         </div>

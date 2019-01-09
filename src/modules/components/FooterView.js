@@ -25,9 +25,9 @@ export default class FooterView extends React.Component {
 
   render() {
     return (
-      <div className="col-md-12 footerContainer">
-        <div className="col-md-10 middle">
-          <div className="col-md-6">
+      <div className="col-xs-12 footerContainer">
+        <div className="col-xs-10 middle">
+          <div className="col-xs-6">
             <div className="footerColumnContainer">
               <div className="footerTitles">Contact Us</div>
               <ul className="addressList">
@@ -43,7 +43,7 @@ export default class FooterView extends React.Component {
               </ul>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-xs-6">
             <ul className="footerColumnContainer addressList canClick">
               <div className="footerTitles">Shop By</div>
               <li onClick={() => this._handleSelectProductType(VIEW_RINGS)}>Rings</li>
