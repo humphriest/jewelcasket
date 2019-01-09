@@ -17,6 +17,26 @@ export default class AppView extends React.Component {
     };
   }
 
+  componentWillMount() {
+    window.addEventListener('resize', this._handleWindowSizeChange);
+  }
+
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._handleWindowSizeChange);
+  }
+
+  _handleWindowSizeChange = () => {
+    const { setIsMobile } = this.props;
+
+    if (window.innerWidth < 500) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
   componentDidUpdate() {
     const { mainBodyHeight } = this.state;
 
@@ -53,8 +73,8 @@ export default class AppView extends React.Component {
     }
     return (
       <div className="middleContainer">
-        <div className="col-md-12 sideBarContainer">
-          <div className="col-md-3 sideBorder" style={{ height: mainBodyHeight }}>
+        <div className="col-xs-12 sideBarContainer">
+          <div className="col-xs-3 sideBorder" style={{ height: mainBodyHeight }}>
             <SideBar
               setCurrentView={setCurrentView}
               currentView={currentView}
@@ -65,7 +85,7 @@ export default class AppView extends React.Component {
             ref={ref => {
               this.mainBody = ref;
             }}
-            className="col-md-9"
+            className="col-xs-9"
           >
             {renderView(this.props)}
           </div>

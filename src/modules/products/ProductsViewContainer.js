@@ -7,6 +7,7 @@ export default connect(
     state: state,
     viewType: state.productState.viewType,
     isProductModalVisible: state.productState.isProductModalVisible,
+    isMobile: state.navigationState.isMobile,
   }),
   dispatch => ({
     toggleProductModal: () => {
