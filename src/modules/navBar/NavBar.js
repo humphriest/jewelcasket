@@ -28,7 +28,7 @@ export default class NavBar extends Component {
             </NavItem>
           </Nav>
         </Navbar>
-        <div id="socialMediaBar" className="col-md-12">
+        <div id="socialMediaBar" className="col-xs-12">
           <div className="socialMediaIconsContainer">
             <span className="smallerSocialMediaIcon">
               <i className="fa fa-phone" />
@@ -42,6 +42,7 @@ export default class NavBar extends Component {
             </span>
             <span>
               <a
+                target="blank"
                 href="https://www.facebook.com/The-Jewel-Casket-1865900440191067/"
                 className="socialMediaIcon"
               >
@@ -49,7 +50,11 @@ export default class NavBar extends Component {
               </a>
             </span>
             <span>
-              <a href="https://www.instagram.com/thejewelcasket/?hl=en" className="socialMediaIcon">
+              <a
+                target="blank"
+                href="https://www.instagram.com/thejewelcasket/?hl=en"
+                className="socialMediaIcon"
+              >
                 <i className="fa fa-instagram" />
               </a>
             </span>

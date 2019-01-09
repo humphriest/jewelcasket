@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import AppView from './AppView';
-import { setCurrentView } from './modules/navigation/NavigationActions';
+import { setCurrentView, setIsMobile } from './modules/navigation/NavigationActions';
 import { displayProductType } from './modules/products/ProductsActions';
 
 export default connect(
@@ -14,6 +14,9 @@ export default connect(
     },
     displayProductType: productType => {
       dispatch(displayProductType(productType));
+    },
+    setIsMobile: isMobile => {
+      dispatch(setIsMobile(isMobile));
     },
   })
 )(AppView);

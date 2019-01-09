@@ -1,7 +1,8 @@
-import { SET_CURRENT_VIEW } from './NavigationActions';
+import { SET_CURRENT_VIEW, SET_IS_MOBILE } from './NavigationActions';
 
 const NavigationState = () => ({
   currentView: 'homepage',
+  isMobile: false,
 });
 
 export const initialNavigationState = NavigationState();
@@ -15,6 +16,14 @@ export function NavigationStateReducer(state = initialNavigationState, action) {
       return {
         ...state,
         currentView: nextView,
+      };
+    }
+    case SET_IS_MOBILE: {
+      const { isMobile } = action.payload;
+
+      return {
+        ...state,
+        isMobile,
       };
     }
     default:

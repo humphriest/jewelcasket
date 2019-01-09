@@ -24,64 +24,62 @@ export default class ContactUsView extends React.Component {
             <br />
             <br />
             <div className="addressList">
-              For more assistance or pricing, come visit us instore to see our stunning and elegant
+              For more assistance or pricing, come visit us in store to see our stunning and elegant
               products. Or email us at
               <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-xs-6">
             <ul className="addressList">
-              <li className="addressListItem" id="listTitle">
-                You can find us at
-              </li>
+              <li id="listTitle">You can find us at</li>
               <br />
               <a
                 href="https://www.google.ie/maps/place/The+Jewel+Casket/@53.3410833,-6.2592416,19z/data=!4m5!3m4!1s0x48670e9be997bec3:0xfce323dbd8b97cc!8m2!3d53.3410781!4d-6.2586986"
                 style={{ cursor: 'pointer' }}
               >
-                <li className="addressListItem">The Jewel Casket</li>
-                <li className="addressListItem">17 South Anne Street</li>
-                <li className="addressListItem">Dublin 2</li>
-                <li className="addressListItem">Ireland</li>
+                <li>The Jewel Casket</li>
+                <li>17 South Anne Street</li>
+                <li>Dublin 2</li>
+                <li>Ireland</li>
               </a>
               <br />
-              <li className="addressListItem">(+353)-1-6711262</li>
+              <li>(+353)-1-6711262</li>
             </ul>
           </div>
-          <div className="col-md-6">
+          <div className="col-xs-6">
             <div id="openingHoursTitle">Opening Hours</div>
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <ul className="addressList">
-                <li className="addressListItem">Monday</li>
-                <li className="addressListItem">Tuesday</li>
-                <li className="addressListItem">Wednesday</li>
-                <li className="addressListItem">Thursday</li>
-                <li className="addressListItem">Friday</li>
-                <li className="addressListItem">Saturday</li>
-                <li className="addressListItem">Sunday</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+                <li>Sunday</li>
               </ul>
             </div>
-            <div className="col-md-6">
+            <div className="col-xs-6">
               <ul className="addressList">
-                <li className="addressListItem">Closed</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">Closed</li>
+                <li>Closed</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>Closed</li>
               </ul>
             </div>
           </div>
         </div>
         <br />
         <div id="contactUsContainer">
-          <div className="col-md-12" id="aboveMapMargin">
+          <div className="col-xs-12" id="aboveMapMargin">
             <MyMapComponent
               isMarkerShown
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_NkXItHgSzgMuS0x5pfbIABQbtDsv2QI"
-              loadingElement={<div style={{ height: `400px` }} />}
-              containerElement={<div style={{ height: `400px` }} />}
+              loadingElement={<div style={{ height: '30vw', backgroundColor: 'grey' }} />}
+              containerElement={<div style={{ height: `30vw` }} />}
               mapElement={<div style={{ height: `100%` }} />}
             />
           </div>

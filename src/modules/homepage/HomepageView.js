@@ -39,8 +39,8 @@ export default class Homepage extends React.Component {
 
   _renderCategoryImagesSections = () => {
     return (
-      <div className="col-md-12 categoriesSectionContainer">
-        <div className="col-md-6">
+      <div className="col-xs-12 categoriesSectionContainer">
+        <div className="col-xs-6">
           <img
             onClick={() => this.goToSection(VIEW_RINGS)}
             className="categoriesImageContainer"
@@ -48,7 +48,7 @@ export default class Homepage extends React.Component {
           />
           <div id="textOverImage">[ Rings ]</div>
         </div>
-        <div className="col-md-6">
+        <div className="col-xs-6">
           <img
             onClick={() => this.goToSection(VIEW_PENDANTS)}
             className="categoriesImageContainer"
@@ -60,11 +60,14 @@ export default class Homepage extends React.Component {
     );
   };
 
-  _renderReviews = () => (
-    <div className="col-md-12 reviewsContainer">
-      <ReviewCarousel />
-    </div>
-  );
+  _renderReviews = () => {
+    const { isMobile } = this.props;
+    return (
+      <div className="col-xs-12 reviewsContainer">
+        <ReviewCarousel isMobile={isMobile} />
+      </div>
+    );
+  };
 
   render() {
     const { setCurrentView } = this.props;

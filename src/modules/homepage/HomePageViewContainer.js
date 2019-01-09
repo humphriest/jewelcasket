@@ -5,7 +5,7 @@ import { displayProductType } from '../products/ProductsActions';
 
 export default connect(
   state => ({
-    state: state,
+    isMobile: state.navigationState.isMobile,
   }),
   dispatch => ({
     setCurrentView: nextView => {

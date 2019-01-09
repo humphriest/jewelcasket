@@ -3,14 +3,14 @@
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 1vw;
 }
 .imageContainer {
-  margin-bottom: 10%;
   cursor: pointer;
   background-color: whitesmoke !important;
 }
 #imageContainerHeight {
-  height: 30em;
+  height: 30vw;
 }
 .productImage {
   resize: both;
