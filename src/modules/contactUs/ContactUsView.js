@@ -24,7 +24,7 @@ export default class ContactUsView extends React.Component {
             <br />
             <br />
             <div className="addressList">
-              For more assistance or pricing, come visit us instore to see our stunning and elegant
+              For more assistance or pricing, come visit us in store to see our stunning and elegant
               products. Or email us at
               <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
             </div>
@@ -78,8 +78,8 @@ export default class ContactUsView extends React.Component {
             <MyMapComponent
               isMarkerShown
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_NkXItHgSzgMuS0x5pfbIABQbtDsv2QI"
-              loadingElement={<div style={{ height: `400px` }} />}
-              containerElement={<div style={{ height: `400px` }} />}
+              loadingElement={<div style={{ height: '30vw', backgroundColor: 'grey' }} />}
+              containerElement={<div style={{ height: `30vw` }} />}
               mapElement={<div style={{ height: `100%` }} />}
             />
           </div>
