@@ -95,6 +95,8 @@ export default class ProductsView extends React.Component {
       }
       case constants.VIEW_EARRINGS: {
         this.pageTitle = 'Earrings';
+        productsToShow = getEarrings();
+
         break;
       }
       case constants.VIEW_BROOCHES: {

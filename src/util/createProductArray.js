@@ -12,9 +12,9 @@ const ringsTitles = [
   'Platinum Diamond Cluster Ring',
   'Platinum Ruby & Diamond Target Ring',
   'Platinum Ruby & Diamond Style Art Deco Ring',
-  '18 Carat Five Stone Diamon Ring',
+  '18 Carat Five Stone Diamond Ring',
   '18 Carat Emerald & Diamond Ring',
-  '18 Carat White Gold Aquamarine & Diamon Cluster Ring',
+  '18 Carat White Gold Aquamarine & Diamond Cluster Ring',
 ];
 
 const pendantsTitles = [
@@ -37,7 +37,7 @@ const braceletsChainsTitles = [
 ];
 
 const earringsTitles = [
-  'Antique Platinum & Diamon Earrings',
+  'Antique Platinum & Diamond Earrings',
   'Tanzanity & Diamond Earrings',
   'Pearl & Diamond Earrings',
   '18 Carat White Gold Pink Sapphire & Diamond Earrings',
