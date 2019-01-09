@@ -60,11 +60,14 @@ export default class Homepage extends React.Component {
     );
   };
 
-  _renderReviews = () => (
-    <div className="col-xs-12 reviewsContainer">
-      <ReviewCarousel />
-    </div>
-  );
+  _renderReviews = () => {
+    const { isMobile } = this.props;
+    return (
+      <div className="col-xs-12 reviewsContainer">
+        <ReviewCarousel isMobile={isMobile} />
+      </div>
+    );
+  };
 
   render() {
     const { setCurrentView } = this.props;

@@ -8,6 +8,8 @@ import './ReviewCorousel.css';
 
 export default class ReviewCorousel extends React.Component {
   _renderReviews = () => {
+    const { isMobile } = this.props;
+
     return reviews.map((review, key) => {
       return (
         <div className="reviewContainer">
@@ -25,7 +27,7 @@ export default class ReviewCorousel extends React.Component {
                   changeRating={this.changeRating}
                   numberOfStars={5}
                   name="rating"
-                  starDimension={window.innerWidth < 500 ? '1vw' : '2vw'}
+                  starDimension={isMobile ? '0.7vw' : '2vw'}
                 />
               </div>
             </div>
