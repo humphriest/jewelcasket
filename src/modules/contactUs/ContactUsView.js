@@ -31,45 +31,43 @@ export default class ContactUsView extends React.Component {
           </div>
           <div className="col-xs-6">
             <ul className="addressList">
-              <li className="addressListItem" id="listTitle">
-                You can find us at
-              </li>
+              <li id="listTitle">You can find us at</li>
               <br />
               <a
                 href="https://www.google.ie/maps/place/The+Jewel+Casket/@53.3410833,-6.2592416,19z/data=!4m5!3m4!1s0x48670e9be997bec3:0xfce323dbd8b97cc!8m2!3d53.3410781!4d-6.2586986"
                 style={{ cursor: 'pointer' }}
               >
-                <li className="addressListItem">The Jewel Casket</li>
-                <li className="addressListItem">17 South Anne Street</li>
-                <li className="addressListItem">Dublin 2</li>
-                <li className="addressListItem">Ireland</li>
+                <li>The Jewel Casket</li>
+                <li>17 South Anne Street</li>
+                <li>Dublin 2</li>
+                <li>Ireland</li>
               </a>
               <br />
-              <li className="addressListItem">(+353)-1-6711262</li>
+              <li>(+353)-1-6711262</li>
             </ul>
           </div>
           <div className="col-xs-6">
             <div id="openingHoursTitle">Opening Hours</div>
             <div className="col-xs-6">
               <ul className="addressList">
-                <li className="addressListItem">Monday</li>
-                <li className="addressListItem">Tuesday</li>
-                <li className="addressListItem">Wednesday</li>
-                <li className="addressListItem">Thursday</li>
-                <li className="addressListItem">Friday</li>
-                <li className="addressListItem">Saturday</li>
-                <li className="addressListItem">Sunday</li>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+                <li>Sunday</li>
               </ul>
             </div>
             <div className="col-xs-6">
               <ul className="addressList">
-                <li className="addressListItem">Closed</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">9.30am - 5.30pm</li>
-                <li className="addressListItem">Closed</li>
+                <li>Closed</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>9.30am - 5.30pm</li>
+                <li>Closed</li>
               </ul>
             </div>
           </div>
