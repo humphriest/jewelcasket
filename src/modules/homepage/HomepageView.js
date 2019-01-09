@@ -19,7 +19,7 @@ export default class Homepage extends React.Component {
       <div className="aboutUsContainer">
         <div>
           The Jewel Casket is a family run Jewellers, located in the heart of Dublin City Center. We
-          are situated off 17 South Anne Street, Dublin 2
+          are situated at 17 South Anne Street, Dublin 2
         </div>
         <br />
         <div>
