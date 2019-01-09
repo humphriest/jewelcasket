@@ -19,8 +19,7 @@
   position: fixed;
   width: 1.6%;
   border-radius: 50%;
-  height: 22%;
-  width: auto;
+  height: auto;
   overflow: visible;
   top: 0;
   margin-left: 0.75%;
@@ -44,4 +43,5 @@
 #quotes {
   float: right;
   color: lightgray;
+  font-size: 5vw;
 }

@@ -1,10 +1,10 @@
 .logo {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 35px;
+  font-size: 3vw;
   cursor: pointer;
 }
 .rightOption {
-  font-size: 20px;
+  font-size: 1.5vw;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #socialMediaBar {
@@ -23,7 +23,7 @@
 .socialMediaIcon {
   padding-left: 1%;
   padding-right: 2%;
-  font-size: 22px;
+  font-size: 1.3vw;
   color: white;
   text-decoration: none;
 }
@@ -37,13 +37,13 @@
   padding-top: 4.5%;
 }
 .callUsText {
-  font-size: 15px;
+  font-size: 1.3vw;
   margin-right: 2%;
   margin-left: 1%;
 }
 .smallerSocialMediaIcon {
   text-align: right;
-  font-size: 17px;
+  font-size: 1vw;
   color: white;
   text-decoration: none;
 }

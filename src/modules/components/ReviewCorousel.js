@@ -14,10 +14,10 @@ export default class ReviewCorousel extends React.Component {
         <div className="reviewContainer">
           <img src={review.image} alt="howieye" className="profileImage" />
           <div className="reviewBoundary">
-            <i id="quotes" className="fa fa-quote-right fa-3x" />
+            <i id="quotes" className="fa fa-quote-right" />
             <div className="reviewBody">
               <div className="reviewAuthor">{review.name}</div>
-              <div>{review.date}</div>
+              <div className="reviewComment">{review.date}</div>
               <div className="reviewComment">{review.comment}</div>
               <div className="reviewStar">
                 <StarRatings
