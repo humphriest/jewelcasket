@@ -5,14 +5,13 @@ import StarRatings from 'react-star-ratings';
 import reviews, { dateFromNow } from '../../util/reviewsData';
 
 import './ReviewCorousel.css';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 export default class ReviewCorousel extends React.Component {
   _renderReviews = () => {
     return reviews.map((review, key) => {
       return (
         <div className="reviewContainer">
-          <img src={review.image} alt="howieye" className="profileImage" />
+          <img src={review.image} alt="review" className="profileImage" />
           <div className="reviewBoundary">
             <i id="quotes" className="fa fa-quote-right" />
             <div className="reviewBody">
@@ -26,7 +25,7 @@ export default class ReviewCorousel extends React.Component {
                   changeRating={this.changeRating}
                   numberOfStars={5}
                   name="rating"
-                  starDimension="20"
+                  starDimension={window.innerWidth < 500 ? '1vw' : '2vw'}
                 />
               </div>
             </div>
@@ -45,10 +44,10 @@ export default class ReviewCorousel extends React.Component {
       slidesToShow: 3,
       className: 'center',
       centerMode: true,
-      centerPadding: '100px',
+      centerPadding: '35vw',
     };
     return (
-      <div className="paddingHorizontal">
+      <div>
         <Slider {...settings}>{this._renderReviews()}</Slider>
       </div>
     );
