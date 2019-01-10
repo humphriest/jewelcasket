@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import './App.css';
 import renderView from './Router';
@@ -19,6 +20,20 @@ export default class AppView extends React.Component {
 
   componentWillMount() {
     window.addEventListener('resize', this._handleWindowSizeChange);
+
+    axios({
+      method: 'GET',
+      url: 'http://localhost:5000/api/products/',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   // make sure to remove the listener
@@ -50,6 +65,29 @@ export default class AppView extends React.Component {
       });
     }
   }
+
+  _createProduct = () => {
+    const body = {
+      title: 'some other wierd title',
+      image: 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7464778.jpg',
+      category: 'rings',
+    };
+
+    axios({
+      method: 'POST',
+      url: 'http://localhost:5000/api/products/',
+      data: body,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
 
   _renderFooter = () => {
     const { currentView, displayProductType, setCurrentView } = this.props;

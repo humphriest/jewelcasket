@@ -32,6 +32,7 @@ app.use(bodyParser.json());
 app.use('/api', routes);
 
 app.use((err, req, res, next) => {
+  console.log('inside app.use in server.js');
   console.log(err);
   next();
 });
