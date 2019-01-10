@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.8.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
@@ -20,11 +23,11 @@
     "spacetime": "^5.1.0"
   },
   "scripts": {
-    "prepare": "react-scripts start eslint src/**/*.js src/**/*.jsx",
-    "start": "react-scripts start",
+    "start": "react-scripts start start eslint src/**/*.js src/**/*.jsx",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
