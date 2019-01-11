@@ -26,6 +26,20 @@ export default class ProductsView extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const { products, createProduct } = this.props;
+
+    console.log(getRings()[0]);
+    const product = {
+      ...getRings()[0],
+      category: 'rings',
+    };
+
+    createProduct(product);
+
+    console.log(products);
+  }
+
   _setProductToShow = chosenProduct => {
     this.setState({
       chosenProduct,
@@ -69,15 +83,11 @@ export default class ProductsView extends React.Component {
   };
 
   _renderJewelleryType = () => {
-    const { viewType, toggleProductModal, isProductModalVisible, isMobile } = this.props;
+    const { viewType, toggleProductModal, isProductModalVisible, isMobile, products } = this.props;
     const { totalNumChosenProduct } = this.state;
 
     let productsToShow = getRings();
     switch (viewType) {
-      case constants.VIEW_ALL: {
-        productsToShow = getRings();
-        break;
-      }
       case constants.VIEW_RINGS: {
         this.pageTitle = 'Rings';
         productsToShow = getRings();
