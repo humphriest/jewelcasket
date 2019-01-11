@@ -3,6 +3,7 @@ import * as actions from './ProductsActions';
 const ProductState = () => ({
   viewType: 1,
   isProductModalVisible: false,
+  products: undefined,
 });
 
 export const initialProductState = ProductState();
@@ -20,6 +21,19 @@ export function ProductStateReducer(state = initialProductState, action) {
       return {
         ...state,
         isProductModalVisible: !state.isProductModalVisible,
+      };
+    }
+    case actions.GET_PRODUCTS_REQUEST: {
+      return {
+        ...state,
+      };
+    }
+    case actions.GET_PRODUCTS_SUCCESS: {
+      const { products } = action.payload;
+
+      return {
+        ...state,
+        products,
       };
     }
     default:
