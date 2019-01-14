@@ -9,6 +9,7 @@ export default connect(
     state: state,
     currentView: state.navigationState.currentView,
     products: state.productState.products,
+    categories: state.productState.categories,
   }),
   dispatch => ({
     setCurrentView: nextView => {

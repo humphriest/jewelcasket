@@ -23,7 +23,7 @@ export default class AppView extends React.Component {
   }
 
   componentDidMount() {
-    const { getProducts } = this.props;
+    const { getProducts, categories } = this.props;
     getProducts();
   }
 
@@ -58,20 +58,21 @@ export default class AppView extends React.Component {
   }
 
   _renderFooter = () => {
-    const { currentView, displayProductType, setCurrentView } = this.props;
+    const { currentView, displayProductType, setCurrentView, categories } = this.props;
     return (
       <div className="footerContainer">
         <FooterView
           setCurrentView={setCurrentView}
           currentView={currentView}
           displayProductType={displayProductType}
+          categories={categories}
         />
       </div>
     );
   };
 
   _renderMiddle = () => {
-    const { currentView, displayProductType, setCurrentView } = this.props;
+    const { currentView, displayProductType, setCurrentView, categories } = this.props;
     const { mainBodyHeight } = this.state;
 
     if (currentView === HOMEPAGE_VIEW) {
@@ -85,6 +86,7 @@ export default class AppView extends React.Component {
               setCurrentView={setCurrentView}
               currentView={currentView}
               displayProductType={displayProductType}
+              categories={categories}
             />
           </div>
           <div

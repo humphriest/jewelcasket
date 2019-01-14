@@ -1,15 +1,7 @@
 import React from 'react';
 
 import './FooterView.css';
-import {
-  VIEW_RINGS,
-  PRODUCTS_VIEW,
-  VIEW_PENDANTS,
-  VIEW_BRACELETS_CHAINS,
-  VIEW_EARRINGS,
-  VIEW_BROOCHES,
-  VIEW_CUFFLINKS,
-} from '../../const';
+import { PRODUCTS_VIEW } from '../../const';
 
 export default class FooterView extends React.Component {
   _handleSelectProductType = productType => {
@@ -20,6 +12,22 @@ export default class FooterView extends React.Component {
     } else {
       setCurrentView(PRODUCTS_VIEW);
       displayProductType(productType);
+    }
+  };
+
+  _capitaliseFirstLetter = title => {
+    return title.charAt(0).toUpperCase() + title.slice(1);
+  };
+
+  _renderCategories = () => {
+    const { categories } = this.props;
+
+    if (categories) {
+      return categories.map((category, key) => (
+        <li onClick={() => this._handleSelectProductType(category.title)}>
+          {this._capitaliseFirstLetter(category.title)}
+        </li>
+      ));
     }
   };
 
@@ -46,14 +54,7 @@ export default class FooterView extends React.Component {
           <div className="col-xs-6">
             <ul className="footerColumnContainer addressList canClick">
               <div className="footerTitles">Shop By</div>
-              <li onClick={() => this._handleSelectProductType(VIEW_RINGS)}>Rings</li>
-              <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)}>Pendants</li>
-              <li onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}>
-                Bracelets & Chains
-              </li>
-              <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)}>Earrings</li>
-              <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)}>Brooches</li>
-              <li onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}>Cufflinks</li>
+              {this._renderCategories()}
             </ul>
           </div>
         </div>

@@ -3,8 +3,10 @@ import {
   getProductsSuccess,
   getProductsFailure,
   createProductRequest,
+  createCategories,
 } from './ProductsActions';
 import { getProducts, createProduct } from '../../util/productsRequest';
+import { createAndReturnCategories } from '../../util/createCategories';
 
 export const getProductsThunk = () => {
   return dispatch => {
@@ -12,7 +14,10 @@ export const getProductsThunk = () => {
 
     return getProducts()
       .then(res => {
+        const categories = createAndReturnCategories(res.data);
+
         dispatch(getProductsSuccess(res.data));
+        dispatch(createCategories(categories));
       })
       .catch(err => {
         console.log('err');

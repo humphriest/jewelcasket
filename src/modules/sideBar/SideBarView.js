@@ -1,15 +1,7 @@
 import React from 'react';
 
 import './SideBarView.css';
-import {
-  VIEW_RINGS,
-  VIEW_PENDANTS,
-  VIEW_BRACELETS_CHAINS,
-  VIEW_EARRINGS,
-  VIEW_BROOCHES,
-  VIEW_CUFFLINKS,
-  PRODUCTS_VIEW,
-} from '../../const';
+import { PRODUCTS_VIEW } from '../../const';
 
 export default class SideBarView extends React.Component {
   _handleSearchChange = () => {
@@ -27,28 +19,26 @@ export default class SideBarView extends React.Component {
     }
   };
 
+  _capitaliseFirstLetter = title => {
+    return title.charAt(0).toUpperCase() + title.slice(1);
+  };
+
+  _renderCategoryFilter = () => {
+    const { categories } = this.props;
+
+    return categories.map((category, key) => (
+      <li accessKey={key} onClick={() => this._handleSelectProductType(category.title)}>
+        <span className="greaterThanSign"> > </span>
+        {this._capitaliseFirstLetter(category.title)}
+      </li>
+    ));
+  };
+
   _renderFilters = () => {
     return (
       <ul className="filterContainer sideBarContainer paddingLeft">
         <span className="filterTitle">Product Categories</span>
-        <li onClick={() => this._handleSelectProductType(VIEW_RINGS)}>
-          <span className="greaterThanSign"> > </span>Rings
-        </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_PENDANTS)}>
-          <span className="greaterThanSign"> > </span>Pendants
-        </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_BRACELETS_CHAINS)}>
-          <span className="greaterThanSign"> > </span>Bracelets & Chains
-        </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_EARRINGS)}>
-          <span className="greaterThanSign"> > </span>Earrings
-        </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_BROOCHES)}>
-          <span className="greaterThanSign"> > </span>Brooches
-        </li>
-        <li onClick={() => this._handleSelectProductType(VIEW_CUFFLINKS)}>
-          <span className="greaterThanSign"> > </span>Cufflinks
-        </li>
+        {this._renderCategoryFilter()}
         <br />
       </ul>
     );

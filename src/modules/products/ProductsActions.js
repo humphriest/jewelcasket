@@ -1,6 +1,8 @@
 export const DISPLAY_PRODUCT_TYPE = '[product] DISPLAY_PRODUCT_TYPE';
 export const TOGGLE_PRODUCT_MODAL = '[product] TOGGLE_PRODUCT_MODAL';
 
+export const CREATE_CATEGORIES = '[product] CREATE_CATEGORIES';
+
 export const GET_PRODUCTS_REQUEST = '[product] GET_PRODUCTS_REQUEST';
 export const GET_PRODUCTS_SUCCESS = '[product] GET_PRODUCTS_SUCCESS';
 export const GET_PRODUCTS_FAILURE = '[product] GET_PRODUCTS_FAILURE';
@@ -21,6 +23,13 @@ export function displayProductType(viewType) {
 export function toggleProductModal() {
   return {
     type: TOGGLE_PRODUCT_MODAL,
+  };
+}
+
+export function createCategories(categories) {
+  return {
+    type: CREATE_CATEGORIES,
+    payload: { categories },
   };
 }
 

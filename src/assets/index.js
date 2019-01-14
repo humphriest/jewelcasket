@@ -1,6 +1,4 @@
 export const assets = {
-  main: require('./main.jpg'),
-
   background: require('./mainBackground.jpg'),
   homepageRing: require('./homepageRing.jpg'),
   homepagePendant: require('./homepagePendant.jpg'),

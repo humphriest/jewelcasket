@@ -1,10 +1,11 @@
 import * as actions from './ProductsActions';
 
 const ProductState = () => ({
-  viewType: 1,
+  viewType: 'rings',
   isProductModalVisible: false,
   products: undefined,
   error: undefined,
+  categories: undefined,
 });
 
 export const initialProductState = ProductState();
@@ -57,6 +58,14 @@ export function ProductStateReducer(state = initialProductState, action) {
       return {
         ...state,
         error,
+      };
+    }
+    case actions.CREATE_CATEGORIES: {
+      const { categories } = action.payload;
+
+      return {
+        ...state,
+        categories,
       };
     }
     default:
