@@ -4,6 +4,7 @@ const ProductState = () => ({
   viewType: 1,
   isProductModalVisible: false,
   products: undefined,
+  error: undefined,
 });
 
 export const initialProductState = ProductState();
@@ -34,6 +35,28 @@ export function ProductStateReducer(state = initialProductState, action) {
       return {
         ...state,
         products,
+      };
+    }
+    case actions.CREATE_PRODUCT_REQUEST: {
+      return {
+        ...state,
+      };
+    }
+    case actions.CREATE_PRODUCT_SUCCESS: {
+      const { product } = action.payload;
+      const { products } = state;
+
+      return {
+        ...state,
+        products: products.push(product),
+      };
+    }
+    case actions.CREATE_PRODUCT_FAILURE: {
+      const { error } = action.payload;
+
+      return {
+        ...state,
+        error,
       };
     }
     default:

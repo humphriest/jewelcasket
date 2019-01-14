@@ -26,16 +26,16 @@ export default class ProductsView extends React.Component {
     };
   }
 
-  componentDidMount() {
+  _createProduct() {
     const { products, createProduct } = this.props;
 
-    console.log(getRings()[0]);
-    const product = {
-      ...getRings()[0],
-      category: 'rings',
-    };
-
-    createProduct(product);
+    // getCufflinks().map((product, key) => {
+    //   const productBody = {
+    //     ...product,
+    //     category: 'cufflinks',
+    //   };
+    //   createProduct(productBody);
+    // });
 
     console.log(products);
   }
@@ -129,7 +129,7 @@ export default class ProductsView extends React.Component {
         totalNumChosenProduct: productsToShow.length,
       });
     }
-    return productsToShow.map((product, key) => {
+    return products.map((product, key) => {
       return (
         <ImageWithDescription
           toggleProductModal={toggleProductModal}

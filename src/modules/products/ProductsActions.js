@@ -54,14 +54,20 @@ export function createProductRequest() {
   };
 }
 
-export function createProductSuccess() {
+export function createProductSuccess(product) {
   return {
     type: CREATE_PRODUCT_SUCCESS,
+    payload: {
+      product,
+    },
   };
 }
 
-export function createProductFailure() {
+export function createProductFailure(error) {
   return {
     type: CREATE_PRODUCT_FAILURE,
+    payload: {
+      error,
+    },
   };
 }

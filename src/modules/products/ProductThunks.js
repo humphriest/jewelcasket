@@ -17,7 +17,7 @@ export const getProductsThunk = () => {
       .catch(err => {
         console.log('err');
         console.log(err);
-        dispatch(getProductsFailure(err));
+        dispatch(getProductsFailure(err.message));
       });
   };
 };
