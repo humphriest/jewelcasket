@@ -5,7 +5,7 @@ import ReviewCarousel from '../components/ReviewCorousel';
 
 import './Homepage.css';
 import { assets } from '../../assets';
-import { VIEW_RINGS, VIEW_PENDANTS, PRODUCTS_VIEW } from '../../const';
+import { PRODUCTS_VIEW } from '../../const';
 
 export default class Homepage extends React.Component {
   goToSection = productType => {
@@ -42,7 +42,7 @@ export default class Homepage extends React.Component {
       <div className="col-xs-12 categoriesSectionContainer">
         <div className="col-xs-6">
           <img
-            onClick={() => this.goToSection(VIEW_RINGS)}
+            onClick={() => this.goToSection('rings')}
             className="categoriesImageContainer"
             src={assets.homepageRing}
           />
@@ -50,7 +50,7 @@ export default class Homepage extends React.Component {
         </div>
         <div className="col-xs-6">
           <img
-            onClick={() => this.goToSection(VIEW_PENDANTS)}
+            onClick={() => this.goToSection('pendants')}
             className="categoriesImageContainer"
             src={assets.homepagePendant}
           />

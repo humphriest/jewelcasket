@@ -25,7 +25,22 @@ export default class AppView extends React.Component {
   componentDidMount() {
     const { getProducts, categories } = this.props;
     getProducts();
+    // this._createNewImage();
   }
+
+  _createNewImage = () => {
+    const data = {
+      img: './assets/mainBackground.jpg',
+    };
+    axios({
+      method: 'POST',
+      url: 'http://localhost:5000/api/image',
+      data,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  };
 
   // make sure to remove the listener
   // when the component is not mounted anymore

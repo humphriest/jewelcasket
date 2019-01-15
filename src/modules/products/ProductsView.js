@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import ReactImageMagnify from 'react-image-magnify';
-
 import ImageWithDescription from '../components/ImageWithDescription';
 import './ProductsView.css';
 
@@ -9,24 +8,25 @@ export default class ProductsView extends React.Component {
   constructor(props) {
     super(props);
 
-    this.pageTitle = 'Rings';
-
     this.state = {
       chosenProduct: null,
       totalNumChosenProduct: 10,
     };
   }
 
+  // componentDidMount() {
+  //   this._createProduct();
+  // }
+
   _createProduct() {
     const { products, createProduct } = this.props;
 
-    // getCufflinks().map((product, key) => {
-    //   const productBody = {
-    //     ...product,
-    //     category: 'cufflinks',
-    //   };
-    //   createProduct(productBody);
-    // });
+    // const productBody = {
+    //   title: 'fake image',
+    //   category: 'rings',
+    //   image: '../../assets/mainBackground.jpg',
+    // };
+    // createProduct(productBody);
 
     console.log(products);
   }
@@ -111,12 +111,13 @@ export default class ProductsView extends React.Component {
   };
 
   render() {
+    const { viewType } = this.props;
     const { totalNumChosenProduct } = this.state;
 
     return (
       <div className="col-xs-12 marginTop">
         <div className="col-xs-12 pageMiddle">
-          <div className="col-xs-5 title">{this.pageTitle}</div>
+          <div className="col-xs-5 title">{viewType}</div>
           <div className="col-xs-4 inStore">Visit us in store to see our prices!</div>
         </div>
         <div className="col-xs-12 jewelleryMiddle">

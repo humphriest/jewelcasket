@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./api/routes/api');
 const path = require('path');
+const multer = require('multer');
+
 require('dotenv').config();
 
 const app = express();
@@ -32,6 +34,12 @@ app.use(bodyParser.json());
 app.use('/api', routes);
 
 app.use((err, req, res, next) => {
+  multer({
+    dest: './uploads/',
+    rename: function(fieldname, filename) {
+      return filename;
+    },
+  });
   console.log('inside app.use in server.js');
   console.log(err);
   next();
