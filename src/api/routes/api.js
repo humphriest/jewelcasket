@@ -1,8 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
-const fs = require('fs');
-const Image = require('../models/image');
 
 const Product = require('../models/product');
 
@@ -21,14 +18,7 @@ router.get('/products', (req, res, next) => {
     });
 });
 
-const storage = multer.diskStorage({
-  destination: function(req, res, cb) {
-    cb(null, 'uploads/');
-  },
-});
-const upload = multer({ storage: storage });
-
-router.route('/products').post(upload.single('file'), (req, res, next) => {
+router.get('/products', (req, res, next) => {
   console.log(req.body);
 
   Product.create(req.body)
@@ -49,26 +39,5 @@ router.route('/products').post(upload.single('file'), (req, res, next) => {
 });
 
 router.delete('/products/:id', (req, res, next) => {});
-
-router
-  .route('/image')
-  .post(upload.single('file'), function(req, res, next) {
-    console.log(req);
-    var new_img = new Image();
-    new_img.img.data = fs.readFileSync(req.file.path);
-    new_img.img.contentType = 'image/jpeg';
-    new_img.save();
-    res.json({ message: 'New image added to the db!' });
-    next();
-  })
-  .get(function(req, res) {
-    Image.findOne({}, 'img createdAt', function(err, img) {
-      if (err) res.send(err);
-      // console.log(img);
-      res.contentType('json');
-      res.send(img);
-    }).sort({ createdAt: 'desc' });
-    next();
-  });
 
 module.exports = router;
