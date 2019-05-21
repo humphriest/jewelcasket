@@ -26,7 +26,7 @@ export default class ContactUsView extends React.Component {
             <div className="addressList">
               For more assistance or pricing, come visit us in store to see our stunning and elegant
               products. Or email us at
-              <a href="mailto:enquiries@jewelcasket.ie"> enquiries@jewelcasket.ie</a>.
+              <a href="mailto:thejewelcasketdublin@gmail.com"> thejewelcasketdublin@gmail.com</a>.
             </div>
           </div>
           <div className="col-xs-6">

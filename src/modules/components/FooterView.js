@@ -37,7 +37,7 @@ export default class FooterView extends React.Component {
                 <li>Ireland</li>
                 <br />
                 <li>(+353)-1-6711262</li>
-                <li>enquiries@jewelCasket.ie</li>
+                <li>thejewelcasketdublin@gmail.com</li>
                 <br />
                 <li> Copyright (C) 2010 The Jewel Casket. All Rights Reserved</li>
               </ul>

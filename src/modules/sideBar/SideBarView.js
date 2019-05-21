@@ -77,8 +77,8 @@ export default class SideBarView extends React.Component {
           <span className="filterTitle"> Have any questions?</span>
           <li>email us at</li>
           <li>
-            <a className="normaliseLinkText" href="mailto:enquiries@jewelcasket.ie">
-              enquiries@jewelcasket.ie
+            <a className="normaliseLinkText" href="mailto:thejewelcasketdublin@gmail.com">
+            thejewelcasketdublin@gmail.com
             </a>
           </li>
         </ul>

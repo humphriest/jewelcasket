@@ -35,9 +35,9 @@ export default class NavBar extends Component {
               <span className="callUsText">+353 1 6711262</span>
             </span>
             <span>
-              <a href="mailto:enquiries@jewelcasket.ie" className="smallerSocialMediaIcon">
+              <a href="mailto:thejewelcasketdublin@gmail.com" className="smallerSocialMediaIcon">
                 <i className="fa fa-envelope" />
-                <span className="callUsText">enquiries@jewelcasket.ie</span>
+                <span className="callUsText">thejewelcasketdublin@gmail.com</span>
               </a>
             </span>
             <span>
