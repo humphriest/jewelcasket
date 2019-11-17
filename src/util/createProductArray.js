@@ -15,6 +15,14 @@ const ringsTitles = [
   '18 Carat Five Stone Diamond Ring',
   '18 Carat Emerald & Diamond Ring',
   '18 Carat White Gold Aquamarine & Diamond Cluster Ring',
+  'Platinum & Emerald Diamond Ring',
+  'Platinum Sapphire & Diamond Ring',
+  '18 Carat Rose Gold Sapphire & Diamond Ring',
+  'Platinum Ruby & Diamond Ring',
+  'White Gold Sapphire & Diamond Cluster Ring',
+  '18 Carat Rose Gold Cluster Ring',
+  'Platinum Diamond & Cluster Ring',
+  'Antique Platinum Diamond Cluster Ring',
 ];
 
 const pendantsTitles = [
@@ -22,6 +30,9 @@ const pendantsTitles = [
   '18 Carat White Gold Diamond Pendant on a White Gold Chain',
   '18 Carat White Gold Aquamarine & Diamond Pendant',
   '18 Carat Rose Gold & Diamond Pendant',
+  'Antique Pearl & Diamond Pendant',
+  'Antique Pearl Victorian Pendant/Brooch',
+  'Antique Amethyst & Pearl Victorian Pendant/Brooch'
 ];
 
 const braceletsChainsTitles = [
@@ -30,14 +41,20 @@ const braceletsChainsTitles = [
   '18 Carat White Gold Diamond Tennis Bracelet',
   '9 Carat Gold Chased Link Bracelet',
   'Fancy Rose Gold Bracelet with Padlock',
+  '9 Carat Rose Gold Bangle',
   'Antique Rose Gold Albert Watch Chain with Blood Stone Fob',
   'Cultured Pearl Necklace with Pearl & Diamond Clasp',
+  '9 Carat Rose Gold Albert Chain'
 ];
 
 const earringsTitles = [
   'Tanzanity & Diamond Earrings',
   'Pearl & Diamond Earrings',
   '18 Carat White Gold Pink Sapphire & Diamond Earrings',
+  '18 Carat Pearl & Diamond Earrings',
+  'Platinum Sapphire & Diamond Drop Earrings',
+  'Platinum Diamond Drop Earrings',
+  'Set of Mother of Pearl Cufflinks & Shirt Stud Set'
 ];
 
 const broochesTitles = [
