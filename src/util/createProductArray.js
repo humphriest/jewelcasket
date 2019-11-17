@@ -10,7 +10,6 @@ import {
 const ringsTitles = [
   '18 Carat White Gold Cluster Ring',
   'Platinum Diamond Cluster Ring',
-  'Platinum Ruby & Diamond Target Ring',
   'Platinum Ruby & Diamond Style Art Deco Ring',
   '18 Carat Five Stone Diamond Ring',
   '18 Carat Emerald & Diamond Ring',
@@ -53,8 +52,7 @@ const earringsTitles = [
   '18 Carat White Gold Pink Sapphire & Diamond Earrings',
   '18 Carat Pearl & Diamond Earrings',
   'Platinum Sapphire & Diamond Drop Earrings',
-  'Platinum Diamond Drop Earrings',
-  'Set of Mother of Pearl Cufflinks & Shirt Stud Set'
+  'Platinum Diamond Drop Earrings'
 ];
 
 const broochesTitles = [
@@ -66,6 +64,7 @@ const cufflinksTitles = [
   'Antique Rose Gold Cufflinks',
   'Set of Mother of Pearl Cufflinks and Shirt Stud Set',
   'Silver & Enamel Oval Shaped Cufflinks',
+  'Set of Mother of Pearl Cufflinks & Shirt Stud Set'
 ];
 
 const makeProductObject = (title, image) => {

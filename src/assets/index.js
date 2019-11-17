@@ -3,7 +3,6 @@ export const assets = {
 
   ring1: require('./ring1.jpeg'),
   ring2: require('./ring2.jpeg'),
-  ring3: require('./ring3.jpeg'),
   ring4: require('./ring4.jpeg'),
   ring5: require('./ring5.jpeg'),
   ring6: require('./ring6.jpeg'),
@@ -41,7 +40,6 @@ export const assets = {
   earring5: require('./earring5.jpeg'),
   earring6: require('./earring6.jpeg'),
   earring7: require('./earring7.jpeg'),
-  earring8: require('./earring8.jpeg'),
 
   brooch1: require('./brooch1.jpeg'),
   brooch2: require('./brooch2.jpeg'),
@@ -49,6 +47,7 @@ export const assets = {
   cufflinks1: require('./cufflinks1.jpeg'),
   cufflinks2: require('./cufflinks2.jpeg'),
   cufflinks3: require('./cufflinks3.jpeg'),
+  cufflinks4: require('./cufflinks4.jpeg'),
 
   background: require('./mainBackground.jpg'),
   homepageRing: require('./homepageRing.jpg'),
@@ -64,7 +63,6 @@ export const assets = {
 export const ringsAssets = [
   assets.ring1,
   assets.ring2,
-  assets.ring3,
   assets.ring4,
   assets.ring5,
   assets.ring6,
@@ -108,9 +106,8 @@ export const earringsAssets = [
   assets.earring5,
   assets.earring6,
   assets.earring7,
-  assets.earring8,
 ];
 
 export const broochesAssets = [assets.brooch1, assets.brooch2];
 
-export const cufflinksAssets = [assets.cufflinks1, assets.cufflinks2, assets.cufflinks3];
+export const cufflinksAssets = [assets.cufflinks1, assets.cufflinks2, assets.cufflinks3, assets.cufflinks4];
