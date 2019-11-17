@@ -19,10 +19,8 @@ const ringsTitles = [
 
 const pendantsTitles = [
   'Amethyst & Diamond Antique Pendant',
-  'Tourmaline & Diamond Victorian Pendant/Brooch',
   '18 Carat White Gold Diamond Pendant on a White Gold Chain',
   '18 Carat White Gold Aquamarine & Diamond Pendant',
-  '18 Carat White Gold Diamond Handbag Pendant',
   '18 Carat Rose Gold & Diamond Pendant',
 ];
 
@@ -37,17 +35,14 @@ const braceletsChainsTitles = [
 ];
 
 const earringsTitles = [
-  'Antique Platinum & Diamond Earrings',
   'Tanzanity & Diamond Earrings',
   'Pearl & Diamond Earrings',
   '18 Carat White Gold Pink Sapphire & Diamond Earrings',
-  'Emerald & Diamond Earrings',
 ];
 
 const broochesTitles = [
   'White Gold Diamond Spray Brooch',
   '15 Carat Antique Brooch',
-  'Antique Diamond & Ruby Insect Brooch',
 ];
 
 const cufflinksTitles = [
